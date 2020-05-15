@@ -1,0 +1,138 @@
+2020-05-02 01:10:14,718 INFO input.FileInputFormat: Total input files to process : 1
+2020-05-02 01:10:14,767 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:15,202 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:15,416 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:15,599 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:15,781 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:16,124 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:16,284 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:16,441 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:16,627 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:16,813 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:16,994 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:17,169 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:17,366 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:17,556 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:17,741 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:17,920 INFO partition.InputSampler: Using 10000 samples
+2020-05-02 01:10:17,980 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+2020-05-02 01:10:17,981 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+2020-05-02 01:10:18,025 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:18,146 INFO client.RMProxy: Connecting to ResourceManager at /192.168.122.158:8032
+2020-05-02 01:10:18,404 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-05-02 01:10:18,419 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ubuntu/.staging/job_1588379203999_0005
+2020-05-02 01:10:18,477 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:18,519 INFO input.FileInputFormat: Total input files to process : 1
+2020-05-02 01:10:18,544 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:18,589 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:18,598 INFO mapreduce.JobSubmitter: number of splits:16
+2020-05-02 01:10:18,721 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 01:10:18,735 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1588379203999_0005
+2020-05-02 01:10:18,736 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2020-05-02 01:10:18,902 INFO conf.Configuration: resource-types.xml not found
+2020-05-02 01:10:18,902 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2020-05-02 01:10:18,954 INFO impl.YarnClientImpl: Submitted application application_1588379203999_0005
+2020-05-02 01:10:18,981 INFO mapreduce.Job: The url to track the job: http://demo-namenode.local:8088/proxy/application_1588379203999_0005/
+2020-05-02 01:10:18,981 INFO mapreduce.Job: Running job: job_1588379203999_0005
+2020-05-02 01:10:25,147 INFO mapreduce.Job: Job job_1588379203999_0005 running in uber mode : false
+2020-05-02 01:10:25,149 INFO mapreduce.Job:  map 0% reduce 0%
+2020-05-02 01:10:35,293 INFO mapreduce.Job:  map 13% reduce 0%
+2020-05-02 01:10:36,306 INFO mapreduce.Job:  map 100% reduce 0%
+2020-05-02 01:10:46,403 INFO mapreduce.Job:  map 100% reduce 100%
+2020-05-02 01:10:46,422 INFO mapreduce.Job: Job job_1588379203999_0005 completed successfully
+2020-05-02 01:10:46,535 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1095216660
+		FILE: Number of bytes written=2194960618
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1075717240
+		HDFS: Number of bytes written=1073741800
+		HDFS: Number of read operations=100
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=8
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed reduce tasks=1
+		Launched map tasks=16
+		Launched reduce tasks=4
+		Data-local map tasks=16
+		Total time spent by all maps in occupied slots (ms)=131873
+		Total time spent by all reduces in occupied slots (ms)=29013
+		Total time spent by all map tasks (ms)=131873
+		Total time spent by all reduce tasks (ms)=29013
+		Total vcore-milliseconds taken by all map tasks=131873
+		Total vcore-milliseconds taken by all reduce tasks=29013
+		Total megabyte-milliseconds taken by all map tasks=135037952
+		Total megabyte-milliseconds taken by all reduce tasks=29709312
+	Map-Reduce Framework
+		Map input records=10737418
+		Map output records=10737418
+		Map output bytes=1073741800
+		Map output materialized bytes=1095217020
+		Input split bytes=1776
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=10737418
+		Reduce shuffle bytes=1095217020
+		Reduce input records=10737418
+		Reduce output records=10737418
+		Spilled Records=21474836
+		Shuffled Maps =64
+		Failed Shuffles=0
+		Merged Map outputs=64
+		GC time elapsed (ms)=26047
+		CPU time spent (ms)=162400
+		Physical memory (bytes) snapshot=12467945472
+		Virtual memory (bytes) snapshot=53793570816
+		Total committed heap usage (bytes)=16120807424
+		Peak Map Physical memory (bytes)=582569984
+		Peak Map Virtual memory (bytes)=2694045696
+		Peak Reduce Physical memory (bytes)=850460672
+		Peak Reduce Virtual memory (bytes)=2708725760
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1075707880
+	File Output Format Counters 
+		Bytes Written=1073741800
+Total time to sort data on hadoop: 32.622 seconds
+
+
+Valsort
+./valsort -o part-00000.sum ../output/part-r-00000
+Records: 2652836
+Checksum: 143e1cf1da8db5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00001.sum ../output/part-r-00001
+Records: 2660433
+Checksum: 144ca8db1ba864
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00002.sum ../output/part-r-00002
+Records: 2688914
+Checksum: 1483801044c3b3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00003.sum ../output/part-r-00003
+Records: 2735235
+Checksum: 14e0b4c96a54a0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00004.sum ../output/part-r-00004
+sp_start failed: ../output/part-r-00004: No such file or directory
+
+cat part-00000.sum part-00001.sum part-00002.sum part-00003.sum part-00004.sum 
+./valsort -s all.sum
+Records: 10737418
+Checksum: 51eefaa6a54e6c
+Duplicate keys: 0
+SUCCESS - all records are in order
+

@@ -1,0 +1,357 @@
+2020-05-02 06:07:19,412 INFO input.FileInputFormat: Total input files to process : 1
+2020-05-02 06:07:19,512 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:19,985 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:20,199 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:20,401 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:20,641 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:20,863 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:21,058 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:21,246 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:21,427 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:21,606 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:21,794 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:21,975 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:22,161 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:22,371 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:22,574 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:22,784 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:23,084 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:23,258 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:23,428 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:23,598 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:23,801 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:23,982 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:24,166 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:24,342 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:24,537 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:24,730 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:24,904 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:25,085 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:25,257 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:25,437 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:25,603 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:25,770 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:25,931 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:26,092 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:26,254 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:26,421 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:26,584 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:26,777 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:26,971 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:27,164 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:27,370 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:27,549 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:27,732 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:27,919 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:28,090 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:28,259 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:28,428 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:28,597 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:28,777 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:28,944 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:29,124 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:29,295 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:29,486 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:29,652 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:29,823 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:29,996 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:30,168 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:30,364 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:30,547 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:30,718 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:30,887 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:31,054 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:31,221 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:31,391 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:31,563 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:31,753 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:31,939 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:32,108 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:32,275 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:32,463 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:32,662 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:32,879 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:33,071 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:33,257 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:33,428 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:33,611 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:33,785 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:33,959 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:34,142 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:34,309 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:34,486 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:34,658 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:34,833 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:35,041 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:35,202 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:35,362 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:35,526 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:35,715 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:35,878 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:36,057 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:36,234 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:36,415 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:36,591 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:36,771 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:36,947 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:37,116 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:37,335 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:37,502 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:37,674 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:37,843 INFO partition.InputSampler: Using 1000 samples
+2020-05-02 06:07:37,914 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+2020-05-02 06:07:37,915 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+2020-05-02 06:07:37,956 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:38,084 INFO client.RMProxy: Connecting to ResourceManager at /192.168.122.249:8032
+2020-05-02 06:07:38,365 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-05-02 06:07:38,374 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ubuntu/.staging/job_1588398601068_0001
+2020-05-02 06:07:38,427 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:38,901 INFO input.FileInputFormat: Total input files to process : 1
+2020-05-02 06:07:38,930 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:38,955 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:38,964 INFO mapreduce.JobSubmitter: number of splits:477
+2020-05-02 06:07:39,020 INFO Configuration.deprecation: mapred.textoutputformat.separator is deprecated. Instead, use mapreduce.output.textoutputformat.separator
+2020-05-02 06:07:39,101 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 06:07:39,136 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1588398601068_0001
+2020-05-02 06:07:39,136 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2020-05-02 06:07:39,268 INFO conf.Configuration: resource-types.xml not found
+2020-05-02 06:07:39,269 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2020-05-02 06:07:39,592 INFO impl.YarnClientImpl: Submitted application application_1588398601068_0001
+2020-05-02 06:07:39,635 INFO mapreduce.Job: The url to track the job: http://namenode.local:8088/proxy/application_1588398601068_0001/
+2020-05-02 06:07:39,636 INFO mapreduce.Job: Running job: job_1588398601068_0001
+2020-05-02 06:07:47,812 INFO mapreduce.Job: Job job_1588398601068_0001 running in uber mode : false
+2020-05-02 06:07:47,814 INFO mapreduce.Job:  map 0% reduce 0%
+2020-05-02 06:07:55,953 INFO mapreduce.Job:  map 1% reduce 0%
+2020-05-02 06:08:03,042 INFO mapreduce.Job:  map 3% reduce 0%
+2020-05-02 06:08:10,105 INFO mapreduce.Job:  map 4% reduce 0%
+2020-05-02 06:08:17,157 INFO mapreduce.Job:  map 5% reduce 0%
+2020-05-02 06:08:23,199 INFO mapreduce.Job:  map 6% reduce 0%
+2020-05-02 06:08:30,255 INFO mapreduce.Job:  map 7% reduce 0%
+2020-05-02 06:08:31,263 INFO mapreduce.Job:  map 8% reduce 0%
+2020-05-02 06:08:37,305 INFO mapreduce.Job:  map 9% reduce 0%
+2020-05-02 06:08:44,350 INFO mapreduce.Job:  map 10% reduce 0%
+2020-05-02 06:08:51,392 INFO mapreduce.Job:  map 11% reduce 0%
+2020-05-02 06:08:55,417 INFO mapreduce.Job:  map 12% reduce 0%
+2020-05-02 06:08:58,436 INFO mapreduce.Job:  map 13% reduce 0%
+2020-05-02 06:09:05,488 INFO mapreduce.Job:  map 14% reduce 0%
+2020-05-02 06:09:11,534 INFO mapreduce.Job:  map 15% reduce 0%
+2020-05-02 06:09:16,562 INFO mapreduce.Job:  map 16% reduce 0%
+2020-05-02 06:09:21,601 INFO mapreduce.Job:  map 17% reduce 0%
+2020-05-02 06:09:25,626 INFO mapreduce.Job:  map 18% reduce 0%
+2020-05-02 06:09:32,659 INFO mapreduce.Job:  map 19% reduce 0%
+2020-05-02 06:09:39,701 INFO mapreduce.Job:  map 20% reduce 2%
+2020-05-02 06:09:45,745 INFO mapreduce.Job:  map 21% reduce 3%
+2020-05-02 06:09:51,780 INFO mapreduce.Job:  map 21% reduce 4%
+2020-05-02 06:09:53,789 INFO mapreduce.Job:  map 22% reduce 4%
+2020-05-02 06:09:57,818 INFO mapreduce.Job:  map 22% reduce 5%
+2020-05-02 06:10:02,846 INFO mapreduce.Job:  map 23% reduce 5%
+2020-05-02 06:10:03,851 INFO mapreduce.Job:  map 23% reduce 6%
+2020-05-02 06:10:09,881 INFO mapreduce.Job:  map 24% reduce 7%
+2020-05-02 06:10:15,914 INFO mapreduce.Job:  map 24% reduce 8%
+2020-05-02 06:10:17,924 INFO mapreduce.Job:  map 25% reduce 8%
+2020-05-02 06:10:23,948 INFO mapreduce.Job:  map 26% reduce 8%
+2020-05-02 06:10:27,966 INFO mapreduce.Job:  map 26% reduce 9%
+2020-05-02 06:10:30,982 INFO mapreduce.Job:  map 27% reduce 9%
+2020-05-02 06:10:37,011 INFO mapreduce.Job:  map 28% reduce 9%
+2020-05-02 06:10:39,023 INFO mapreduce.Job:  map 29% reduce 9%
+2020-05-02 06:10:40,028 INFO mapreduce.Job:  map 29% reduce 10%
+2020-05-02 06:10:48,071 INFO mapreduce.Job:  map 30% reduce 10%
+2020-05-02 06:10:55,114 INFO mapreduce.Job:  map 31% reduce 10%
+2020-05-02 06:11:04,170 INFO mapreduce.Job:  map 32% reduce 10%
+2020-05-02 06:11:10,198 INFO mapreduce.Job:  map 33% reduce 11%
+2020-05-02 06:11:17,234 INFO mapreduce.Job:  map 34% reduce 11%
+2020-05-02 06:11:23,267 INFO mapreduce.Job:  map 35% reduce 11%
+2020-05-02 06:11:28,310 INFO mapreduce.Job:  map 35% reduce 12%
+2020-05-02 06:11:29,317 INFO mapreduce.Job:  map 36% reduce 12%
+2020-05-02 06:11:36,351 INFO mapreduce.Job:  map 37% reduce 12%
+2020-05-02 06:11:42,381 INFO mapreduce.Job:  map 38% reduce 12%
+2020-05-02 06:11:46,401 INFO mapreduce.Job:  map 38% reduce 13%
+2020-05-02 06:11:51,428 INFO mapreduce.Job:  map 39% reduce 13%
+2020-05-02 06:11:57,453 INFO mapreduce.Job:  map 40% reduce 13%
+2020-05-02 06:12:06,501 INFO mapreduce.Job:  map 41% reduce 13%
+2020-05-02 06:12:10,521 INFO mapreduce.Job:  map 41% reduce 14%
+2020-05-02 06:12:12,531 INFO mapreduce.Job:  map 42% reduce 14%
+2020-05-02 06:12:19,565 INFO mapreduce.Job:  map 43% reduce 14%
+2020-05-02 06:12:27,602 INFO mapreduce.Job:  map 44% reduce 14%
+2020-05-02 06:12:28,606 INFO mapreduce.Job:  map 44% reduce 15%
+2020-05-02 06:12:34,641 INFO mapreduce.Job:  map 45% reduce 15%
+2020-05-02 06:12:40,667 INFO mapreduce.Job:  map 46% reduce 15%
+2020-05-02 06:12:48,047 INFO mapreduce.Job:  map 47% reduce 15%
+2020-05-02 06:12:53,075 INFO mapreduce.Job:  map 47% reduce 16%
+2020-05-02 06:12:55,083 INFO mapreduce.Job:  map 48% reduce 16%
+2020-05-02 06:13:01,108 INFO mapreduce.Job:  map 49% reduce 16%
+2020-05-02 06:13:07,135 INFO mapreduce.Job:  map 50% reduce 16%
+2020-05-02 06:13:11,155 INFO mapreduce.Job:  map 50% reduce 17%
+2020-05-02 06:13:19,189 INFO mapreduce.Job:  map 51% reduce 17%
+2020-05-02 06:13:26,221 INFO mapreduce.Job:  map 52% reduce 17%
+2020-05-02 06:13:33,246 INFO mapreduce.Job:  map 53% reduce 17%
+2020-05-02 06:13:35,255 INFO mapreduce.Job:  map 53% reduce 18%
+2020-05-02 06:13:40,280 INFO mapreduce.Job:  map 54% reduce 18%
+2020-05-02 06:13:41,286 INFO mapreduce.Job:  map 55% reduce 18%
+2020-05-02 06:13:47,310 INFO mapreduce.Job:  map 56% reduce 18%
+2020-05-02 06:13:53,333 INFO mapreduce.Job:  map 56% reduce 19%
+2020-05-02 06:13:54,340 INFO mapreduce.Job:  map 57% reduce 19%
+2020-05-02 06:14:01,380 INFO mapreduce.Job:  map 58% reduce 19%
+2020-05-02 06:14:08,407 INFO mapreduce.Job:  map 59% reduce 19%
+2020-05-02 06:14:11,419 INFO mapreduce.Job:  map 59% reduce 20%
+2020-05-02 06:14:16,439 INFO mapreduce.Job:  map 60% reduce 20%
+2020-05-02 06:14:22,463 INFO mapreduce.Job:  map 61% reduce 20%
+2020-05-02 06:14:30,488 INFO mapreduce.Job:  map 62% reduce 20%
+2020-05-02 06:14:35,506 INFO mapreduce.Job:  map 62% reduce 21%
+2020-05-02 06:14:38,519 INFO mapreduce.Job:  map 63% reduce 21%
+2020-05-02 06:14:46,561 INFO mapreduce.Job:  map 64% reduce 21%
+2020-05-02 06:14:53,597 INFO mapreduce.Job:  map 65% reduce 21%
+2020-05-02 06:14:59,620 INFO mapreduce.Job:  map 65% reduce 22%
+2020-05-02 06:15:00,625 INFO mapreduce.Job:  map 66% reduce 22%
+2020-05-02 06:15:07,652 INFO mapreduce.Job:  map 67% reduce 22%
+2020-05-02 06:15:13,680 INFO mapreduce.Job:  map 68% reduce 22%
+2020-05-02 06:15:17,693 INFO mapreduce.Job:  map 68% reduce 23%
+2020-05-02 06:15:19,703 INFO mapreduce.Job:  map 69% reduce 23%
+2020-05-02 06:15:26,733 INFO mapreduce.Job:  map 70% reduce 23%
+2020-05-02 06:15:33,761 INFO mapreduce.Job:  map 71% reduce 23%
+2020-05-02 06:15:41,801 INFO mapreduce.Job:  map 71% reduce 24%
+2020-05-02 06:15:45,824 INFO mapreduce.Job:  map 72% reduce 24%
+2020-05-02 06:15:52,854 INFO mapreduce.Job:  map 73% reduce 24%
+2020-05-02 06:15:58,889 INFO mapreduce.Job:  map 74% reduce 24%
+2020-05-02 06:16:04,921 INFO mapreduce.Job:  map 75% reduce 24%
+2020-05-02 06:16:05,928 INFO mapreduce.Job:  map 75% reduce 25%
+2020-05-02 06:16:11,951 INFO mapreduce.Job:  map 76% reduce 25%
+2020-05-02 06:16:18,978 INFO mapreduce.Job:  map 77% reduce 25%
+2020-05-02 06:16:24,001 INFO mapreduce.Job:  map 77% reduce 26%
+2020-05-02 06:16:26,009 INFO mapreduce.Job:  map 78% reduce 26%
+2020-05-02 06:16:32,032 INFO mapreduce.Job:  map 79% reduce 26%
+2020-05-02 06:16:39,060 INFO mapreduce.Job:  map 80% reduce 26%
+2020-05-02 06:16:42,073 INFO mapreduce.Job:  map 80% reduce 27%
+2020-05-02 06:16:44,081 INFO mapreduce.Job:  map 81% reduce 27%
+2020-05-02 06:16:51,118 INFO mapreduce.Job:  map 82% reduce 27%
+2020-05-02 06:16:57,139 INFO mapreduce.Job:  map 83% reduce 27%
+2020-05-02 06:17:00,150 INFO mapreduce.Job:  map 83% reduce 28%
+2020-05-02 06:17:03,188 INFO mapreduce.Job:  map 84% reduce 28%
+2020-05-02 06:17:10,220 INFO mapreduce.Job:  map 85% reduce 28%
+2020-05-02 06:17:14,241 INFO mapreduce.Job:  map 86% reduce 28%
+2020-05-02 06:17:18,281 INFO mapreduce.Job:  map 86% reduce 29%
+2020-05-02 06:17:22,294 INFO mapreduce.Job:  map 87% reduce 29%
+2020-05-02 06:17:29,319 INFO mapreduce.Job:  map 88% reduce 29%
+2020-05-02 06:17:36,349 INFO mapreduce.Job:  map 89% reduce 29%
+2020-05-02 06:17:42,374 INFO mapreduce.Job:  map 89% reduce 30%
+2020-05-02 06:17:43,379 INFO mapreduce.Job:  map 90% reduce 30%
+2020-05-02 06:17:50,414 INFO mapreduce.Job:  map 91% reduce 30%
+2020-05-02 06:17:56,443 INFO mapreduce.Job:  map 92% reduce 30%
+2020-05-02 06:18:00,457 INFO mapreduce.Job:  map 92% reduce 31%
+2020-05-02 06:18:03,468 INFO mapreduce.Job:  map 93% reduce 31%
+2020-05-02 06:18:10,490 INFO mapreduce.Job:  map 94% reduce 31%
+2020-05-02 06:18:21,529 INFO mapreduce.Job:  map 95% reduce 31%
+2020-05-02 06:18:24,552 INFO mapreduce.Job:  map 95% reduce 32%
+2020-05-02 06:18:28,571 INFO mapreduce.Job:  map 96% reduce 32%
+2020-05-02 06:18:36,606 INFO mapreduce.Job:  map 97% reduce 32%
+2020-05-02 06:18:43,635 INFO mapreduce.Job:  map 98% reduce 32%
+2020-05-02 06:18:48,653 INFO mapreduce.Job:  map 98% reduce 33%
+2020-05-02 06:18:50,675 INFO mapreduce.Job:  map 99% reduce 33%
+2020-05-02 06:18:55,693 INFO mapreduce.Job:  map 100% reduce 33%
+2020-05-02 06:19:00,712 INFO mapreduce.Job:  map 100% reduce 38%
+2020-05-02 06:19:06,733 INFO mapreduce.Job:  map 100% reduce 49%
+2020-05-02 06:19:12,755 INFO mapreduce.Job:  map 100% reduce 60%
+2020-05-02 06:19:18,779 INFO mapreduce.Job:  map 100% reduce 67%
+2020-05-02 06:19:30,831 INFO mapreduce.Job:  map 100% reduce 68%
+2020-05-02 06:19:36,853 INFO mapreduce.Job:  map 100% reduce 69%
+2020-05-02 06:19:42,875 INFO mapreduce.Job:  map 100% reduce 70%
+2020-05-02 06:19:48,897 INFO mapreduce.Job:  map 100% reduce 71%
+2020-05-02 06:20:00,946 INFO mapreduce.Job:  map 100% reduce 72%
+2020-05-02 06:20:06,974 INFO mapreduce.Job:  map 100% reduce 73%
+2020-05-02 06:20:13,002 INFO mapreduce.Job:  map 100% reduce 74%
+2020-05-02 06:20:25,059 INFO mapreduce.Job:  map 100% reduce 75%
+2020-05-02 06:20:31,089 INFO mapreduce.Job:  map 100% reduce 76%
+2020-05-02 06:20:37,115 INFO mapreduce.Job:  map 100% reduce 77%
+2020-05-02 06:20:49,162 INFO mapreduce.Job:  map 100% reduce 78%
+2020-05-02 06:20:55,184 INFO mapreduce.Job:  map 100% reduce 79%
+2020-05-02 06:21:01,206 INFO mapreduce.Job:  map 100% reduce 80%
+2020-05-02 06:21:13,253 INFO mapreduce.Job:  map 100% reduce 81%
+2020-05-02 06:21:19,277 INFO mapreduce.Job:  map 100% reduce 82%
+2020-05-02 06:21:31,334 INFO mapreduce.Job:  map 100% reduce 83%
+2020-05-02 06:21:37,358 INFO mapreduce.Job:  map 100% reduce 84%
+2020-05-02 06:21:43,391 INFO mapreduce.Job:  map 100% reduce 85%
+2020-05-02 06:21:55,448 INFO mapreduce.Job:  map 100% reduce 86%
+2020-05-02 06:22:01,472 INFO mapreduce.Job:  map 100% reduce 87%
+2020-05-02 06:22:13,518 INFO mapreduce.Job:  map 100% reduce 88%
+2020-05-02 06:22:19,541 INFO mapreduce.Job:  map 100% reduce 89%
+2020-05-02 06:22:25,564 INFO mapreduce.Job:  map 100% reduce 90%
+2020-05-02 06:22:37,623 INFO mapreduce.Job:  map 100% reduce 91%
+2020-05-02 06:22:43,649 INFO mapreduce.Job:  map 100% reduce 92%
+2020-05-02 06:22:49,675 INFO mapreduce.Job:  map 100% reduce 93%
+2020-05-02 06:23:01,720 INFO mapreduce.Job:  map 100% reduce 94%
+2020-05-02 06:23:07,742 INFO mapreduce.Job:  map 100% reduce 95%
+2020-05-02 06:23:13,770 INFO mapreduce.Job:  map 100% reduce 96%
+2020-05-02 06:23:25,847 INFO mapreduce.Job:  map 100% reduce 97%
+2020-05-02 06:23:31,875 INFO mapreduce.Job:  map 100% reduce 98%
+2020-05-02 06:23:37,901 INFO mapreduce.Job:  map 100% reduce 99%
+2020-05-02 06:23:49,950 INFO mapreduce.Job:  map 100% reduce 100%
+2020-05-02 06:23:51,976 INFO mapreduce.Job: Job job_1588398601068_0001 completed successfully
+2020-05-02 06:23:52,117 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=64264381422
+		FILE: Number of bytes written=97012545957
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=32062447512
+		HDFS: Number of bytes written=32000000000
+		HDFS: Number of read operations=1436
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=477
+		Launched reduce tasks=1
+		Data-local map tasks=477
+		Total time spent by all maps in occupied slots (ms)=2617934
+		Total time spent by all reduces in occupied slots (ms)=865747
+		Total time spent by all map tasks (ms)=2617934
+		Total time spent by all reduce tasks (ms)=865747
+		Total vcore-milliseconds taken by all map tasks=2617934
+		Total vcore-milliseconds taken by all reduce tasks=865747
+		Total megabyte-milliseconds taken by all map tasks=2680764416
+		Total megabyte-milliseconds taken by all reduce tasks=886524928
+	Map-Reduce Framework
+		Map input records=320000000
+		Map output records=320000000
+		Map output bytes=32000000000
+		Map output materialized bytes=32640002862
+		Input split bytes=57240
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=320000000
+		Reduce shuffle bytes=32640002862
+		Reduce input records=320000000
+		Reduce output records=320000000
+		Spilled Records=950042950
+		Shuffled Maps =477
+		Failed Shuffles=0
+		Merged Map outputs=477
+		GC time elapsed (ms)=206778
+		CPU time spent (ms)=3245300
+		Physical memory (bytes) snapshot=284032720896
+		Virtual memory (bytes) snapshot=1263976124416
+		Total committed heap usage (bytes)=384830537728
+		Peak Map Physical memory (bytes)=607203328
+		Peak Map Virtual memory (bytes)=2649579520
+		Peak Reduce Physical memory (bytes)=1022652416
+		Peak Reduce Virtual memory (bytes)=2659553280
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=32062390272
+	File Output Format Counters 
+		Bytes Written=32000000000
+Total time to sort data on hadoop: 984.58 seconds
+
+Valsort
+Records: 343597384
+Checksum: a3d691b0bacfba4
+Duplicate keys: 0
+SUCCESS - all records are in order

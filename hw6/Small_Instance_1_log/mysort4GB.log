@@ -1,0 +1,10 @@
+Complete data cannot be sorted in the memory and hence external merge sort will be used
+Done, total time taken for sorting: 43 sec
+Total Data Read: 31 GB
+Total Data Write: 31 GB
+
+Valsort
+Records: 42949672
+Checksum: 147b5973fa8311a
+Duplicate keys: 0
+SUCCESS - all records are in order

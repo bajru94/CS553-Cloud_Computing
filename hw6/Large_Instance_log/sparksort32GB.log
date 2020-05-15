@@ -1,0 +1,3106 @@
+bin/spark-submit --class SparkSort --master yarn --deploy-mode cluster --driver-memory 16g --executor-memory 8g --executor-cores 4 --num-executors 4 SparkSort.jar /home/input/32GB.txt /home/output/
+2020-05-01 20:54:31,866 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-01 20:54:31,930 INFO client.RMProxy: Connecting to ResourceManager at /192.168.122.158:8032
+2020-05-01 20:54:32,307 INFO yarn.Client: Requesting a new application from cluster with 2 NodeManagers
+2020-05-01 20:54:32,394 INFO conf.Configuration: resource-types.xml not found
+2020-05-01 20:54:32,394 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2020-05-01 20:54:32,410 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (20480 MB per container)
+2020-05-01 20:54:32,410 INFO yarn.Client: Will allocate AM container, with 18022 MB memory including 1638 MB overhead
+2020-05-01 20:54:32,411 INFO yarn.Client: Setting up container launch context for our AM
+2020-05-01 20:54:32,412 INFO yarn.Client: Setting up the launch environment for our AM container
+2020-05-01 20:54:32,421 INFO yarn.Client: Preparing resources for our AM container
+2020-05-01 20:54:32,797 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2020-05-01 20:54:34,839 INFO yarn.Client: Uploading resource file:/tmp/spark-8663105e-eae2-41e4-b753-31ad14085506/__spark_libs__2157438728831072994.zip -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588361578124_0014/__spark_libs__2157438728831072994.zip
+2020-05-01 20:54:36,278 INFO yarn.Client: Uploading resource file:/exports/projects/spark-3.0.0-preview2-bin-hadoop3.2/SparkSort.jar -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588361578124_0014/SparkSort.jar
+2020-05-01 20:54:36,552 INFO yarn.Client: Uploading resource file:/tmp/spark-8663105e-eae2-41e4-b753-31ad14085506/__spark_conf__4232441454422558593.zip -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588361578124_0014/__spark_conf__.zip
+2020-05-01 20:54:36,618 INFO spark.SecurityManager: Changing view acls to: ubuntu
+2020-05-01 20:54:36,619 INFO spark.SecurityManager: Changing modify acls to: ubuntu
+2020-05-01 20:54:36,619 INFO spark.SecurityManager: Changing view acls groups to: 
+2020-05-01 20:54:36,619 INFO spark.SecurityManager: Changing modify acls groups to: 
+2020-05-01 20:54:36,620 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ubuntu); groups with view permissions: Set(); users  with modify permissions: Set(ubuntu); groups with modify permissions: Set()
+2020-05-01 20:54:36,684 INFO yarn.Client: Submitting application application_1588361578124_0014 to ResourceManager
+2020-05-01 20:54:36,722 INFO impl.YarnClientImpl: Submitted application application_1588361578124_0014
+2020-05-01 20:54:37,728 INFO yarn.Client: Application report for application_1588361578124_0014 (state: ACCEPTED)
+2020-05-01 20:54:37,736 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1588366476699
+	 final status: UNDEFINED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588361578124_0014/
+	 user: ubuntu
+2020-05-01 20:54:38,740 INFO yarn.Client: Application report for application_1588361578124_0014 (state: ACCEPTED)
+2020-05-01 20:54:39,743 INFO yarn.Client: Application report for application_1588361578124_0014 (state: ACCEPTED)
+2020-05-01 20:54:40,747 INFO yarn.Client: Application report for application_1588361578124_0014 (state: ACCEPTED)
+2020-05-01 20:54:41,751 INFO yarn.Client: Application report for application_1588361578124_0014 (state: ACCEPTED)
+2020-05-01 20:54:42,754 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:42,755 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: demo-datanode1.local
+	 ApplicationMaster RPC port: 37749
+	 queue: default
+	 start time: 1588366476699
+	 final status: UNDEFINED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588361578124_0014/
+	 user: ubuntu
+2020-05-01 20:54:43,759 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:44,763 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:45,767 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:46,770 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:47,773 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:48,776 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:49,780 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:50,783 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:51,792 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:52,796 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:53,799 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:54,802 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:55,805 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:56,808 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:57,811 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:58,814 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:54:59,817 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:00,820 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:01,823 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:02,826 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:03,829 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:04,833 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:05,836 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:06,839 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:07,842 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:08,845 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:09,848 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:10,851 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:11,854 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:12,857 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:13,860 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:14,863 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:15,866 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:16,869 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:17,872 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:18,875 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:19,877 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:20,880 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:21,883 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:22,886 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:23,889 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:24,891 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:25,894 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:26,897 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:27,899 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:28,902 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:29,904 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:30,907 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:31,909 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:32,912 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:33,914 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:34,917 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:35,920 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:36,922 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:37,925 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:38,928 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:39,931 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:40,934 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:41,937 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:42,939 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:43,942 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:44,945 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:45,948 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:46,951 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:47,954 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:48,956 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:49,959 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:50,962 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:51,964 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:52,966 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:53,970 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:54,973 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:55,975 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:56,978 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:57,981 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:58,984 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:55:59,987 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:00,989 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:01,992 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:02,995 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:03,998 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:05,001 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:06,003 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:07,006 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:08,009 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:09,015 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:10,018 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:11,021 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:12,023 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:13,025 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:14,028 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:15,031 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:16,034 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:17,037 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:18,040 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:19,042 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:20,045 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:21,047 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:22,049 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:23,053 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:24,056 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:25,059 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:26,061 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:27,064 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:28,067 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:29,069 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:30,072 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:31,074 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:32,078 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:33,081 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:34,083 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:35,086 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:36,089 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:37,091 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:38,094 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:39,097 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:40,101 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:41,104 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:42,107 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:43,109 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:44,111 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:45,115 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:46,118 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:47,120 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:48,123 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:49,125 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:50,128 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:51,131 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:52,134 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:53,136 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:54,139 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:55,142 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:56,145 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:57,148 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:58,150 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:56:59,153 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:00,156 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:01,158 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:02,161 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:03,163 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:04,165 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:05,168 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:06,172 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:07,175 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:08,178 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:09,181 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:10,184 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:11,187 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:12,189 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:13,192 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:14,194 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:15,197 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:16,200 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:17,203 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:18,206 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:19,208 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:20,211 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:21,214 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:22,216 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:23,219 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:24,222 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:25,224 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:26,227 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:27,230 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:28,233 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:29,235 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:30,238 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:31,241 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:32,244 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:33,246 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:34,249 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:35,252 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:36,254 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:37,258 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:38,260 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:39,263 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:40,266 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:41,268 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:42,271 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:43,274 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:44,277 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:45,280 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:46,282 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:47,285 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:48,287 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:49,290 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:50,293 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:51,296 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:52,298 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:53,300 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:54,303 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:55,305 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:56,308 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:57,311 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:58,313 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:57:59,316 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:00,318 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:01,321 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:02,324 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:03,326 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:04,329 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:05,332 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:06,335 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:07,338 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:08,341 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:09,343 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:10,345 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:11,348 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:12,350 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:13,353 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:14,356 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:15,358 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:16,361 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:17,366 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:18,369 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:19,372 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:20,374 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:21,377 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:22,379 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:23,381 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:24,384 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:25,387 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:26,389 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:27,391 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:28,394 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:29,396 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:30,398 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:31,400 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:32,403 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:33,405 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:34,408 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:35,410 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:36,413 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:37,417 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:38,419 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:39,421 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:40,424 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:41,426 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:42,429 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:43,431 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:44,434 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:45,437 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:46,440 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:47,443 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:48,446 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:49,449 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:50,451 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:51,454 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:52,458 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:53,461 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:54,463 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:55,465 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:56,467 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:57,470 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:58,472 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:58:59,474 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:00,477 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:01,479 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:02,481 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:03,484 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:04,487 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:05,489 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:06,491 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:07,493 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:08,496 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:09,499 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:10,502 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:11,505 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:12,508 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:13,510 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:14,513 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:15,516 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:16,518 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:17,520 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:18,523 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:19,526 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:20,529 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:21,531 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:22,533 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:23,536 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:24,539 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:25,541 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:26,544 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:27,547 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:28,549 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:29,552 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:30,554 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:31,557 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:32,559 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:33,561 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:34,564 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:35,566 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:36,569 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:37,572 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:38,574 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:39,576 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:40,579 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:41,581 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:42,584 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:43,587 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:44,590 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:45,592 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:46,594 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:47,597 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:48,600 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:49,602 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:50,605 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:51,608 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:52,612 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:53,614 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:54,617 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:55,620 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:56,622 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:57,624 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:58,626 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 20:59:59,629 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:00,631 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:01,634 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:02,637 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:03,639 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:04,641 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:05,643 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:06,646 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:07,648 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:08,650 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:09,653 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:10,656 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:11,658 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:12,660 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:13,663 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:14,666 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:15,668 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:16,671 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:17,674 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:18,677 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:19,679 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:20,682 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:21,684 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:22,687 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:23,690 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:24,692 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:25,696 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:26,700 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:27,702 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:28,704 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:29,707 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:30,710 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:31,712 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:32,715 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:33,718 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:34,720 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:35,722 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:36,725 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:37,727 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:38,730 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:39,733 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:40,736 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:41,738 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:42,741 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:43,743 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:44,746 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:45,748 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:46,751 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:47,753 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:48,756 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:49,758 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:50,761 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:51,763 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:52,765 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:53,768 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:54,770 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:55,772 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:56,775 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:57,777 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:58,780 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:00:59,782 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:00,784 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:01,787 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:02,790 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:03,792 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:04,794 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:05,797 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:06,799 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:07,802 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:08,804 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:09,807 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:10,810 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:11,812 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:12,814 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:13,816 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:14,818 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:15,820 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:16,823 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:17,825 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:18,827 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:19,829 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:20,832 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:21,834 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:22,837 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:23,840 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:24,842 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:25,844 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:26,847 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:27,849 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:28,852 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:29,854 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:30,856 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:31,859 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:32,861 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:33,864 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:34,867 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:35,869 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:36,871 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:37,874 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:38,876 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:39,878 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:40,880 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:41,883 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:42,885 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:43,887 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:44,890 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:45,892 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:46,894 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:47,897 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:48,899 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:49,902 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:50,904 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:51,906 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:52,909 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:53,911 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:54,914 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:55,915 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:56,917 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:57,920 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:58,922 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:01:59,924 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:00,927 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:01,929 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:02,931 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:03,933 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:04,935 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:05,937 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:06,940 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:07,942 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:08,944 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:09,946 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:10,949 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:11,951 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:12,953 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:13,955 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:14,957 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:15,959 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:16,961 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:17,964 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:18,966 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:19,968 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:20,971 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:21,973 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:22,975 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:23,978 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:24,980 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:25,982 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:26,984 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:27,986 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:28,988 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:29,990 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:30,993 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:31,995 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:32,997 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:34,001 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:35,004 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:36,007 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:37,009 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:38,012 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:39,014 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:40,017 INFO yarn.Client: Application report for application_1588361578124_0014 (state: RUNNING)
+2020-05-01 21:02:41,019 INFO yarn.Client: Application report for application_1588361578124_0014 (state: FINISHED)
+2020-05-01 21:02:41,020 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: demo-datanode1.local
+	 ApplicationMaster RPC port: 37749
+	 queue: default
+	 start time: 1588366476699
+	 final status: SUCCEEDED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588361578124_0014/
+	 user: ubuntu
+2020-05-01 21:02:41,042 INFO util.ShutdownHookManager: Shutdown hook called
+2020-05-01 21:02:41,044 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-bc2769ac-7937-490a-b784-a5ce083b9cf2
+2020-05-01 21:02:41,050 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-8663105e-eae2-41e4-b753-31ad14085506
+
+Valsort
+./valsort -o part-00000.sum ../output/part-00000
+Records: 662050
+Checksum: 50dee617910a9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00001.sum ../output/part-00001
+Records: 858246
+Checksum: 68a925c7ab468
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00002.sum ../output/part-00002
+Records: 616183
+Checksum: 4b366f734b7cf
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00003.sum ../output/part-00003
+Records: 754977
+Checksum: 5c26210e73532
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00004.sum ../output/part-00004
+Records: 707303
+Checksum: 56515144e959e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00005.sum ../output/part-00005
+Records: 718849
+Checksum: 57c2f719d7a7d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00006.sum ../output/part-00006
+Records: 594214
+Checksum: 488517257807a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00007.sum ../output/part-00007
+Records: 913665
+Checksum: 6f6614de02c87
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00008.sum ../output/part-00008
+Records: 660038
+Checksum: 509298be4cc41
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00009.sum ../output/part-00009
+Records: 582682
+Checksum: 4724afa519274
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00010.sum ../output/part-00010
+Records: 543134
+Checksum: 4242b4dd51603
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00011.sum ../output/part-00011
+Records: 621985
+Checksum: 4beaff21f69ce
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00012.sum ../output/part-00012
+Records: 738373
+Checksum: 5a34a6f3e127f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00013.sum ../output/part-00013
+Records: 625912
+Checksum: 4c674abc264f4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00014.sum ../output/part-00014
+Records: 804292
+Checksum: 620d92a60ffbb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00015.sum ../output/part-00015
+Records: 557351
+Checksum: 4411b52ea1ed7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00016.sum ../output/part-00016
+Records: 646287
+Checksum: 4ee004d3edd70
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00017.sum ../output/part-00017
+Records: 660331
+Checksum: 50a86767d5eb5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00018.sum ../output/part-00018
+Records: 668299
+Checksum: 5193b36850c92
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00019.sum ../output/part-00019
+Records: 768412
+Checksum: 5dc006492a23a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00020.sum ../output/part-00020
+Records: 499899
+Checksum: 3d0651528ce29
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00021.sum ../output/part-00021
+Records: 552808
+Checksum: 4379bd35bbb8c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00022.sum ../output/part-00022
+Records: 704952
+Checksum: 56111d29aac29
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00023.sum ../output/part-00023
+Records: 735929
+Checksum: 59c3a716a522b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00024.sum ../output/part-00024
+Records: 703664
+Checksum: 55d3e7be5b8e1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00025.sum ../output/part-00025
+Records: 587999
+Checksum: 47af72c82410d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00026.sum ../output/part-00026
+Records: 692457
+Checksum: 548fb9f788b3a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00027.sum ../output/part-00027
+Records: 666518
+Checksum: 51655680d5b23
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00028.sum ../output/part-00028
+Records: 616049
+Checksum: 4b293db89255d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00029.sum ../output/part-00029
+Records: 881368
+Checksum: 6ba02cd06abdc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00030.sum ../output/part-00030
+Records: 613832
+Checksum: 4aea03fcd7269
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00031.sum ../output/part-00031
+Records: 712411
+Checksum: 571442088aa93
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00032.sum ../output/part-00032
+Records: 765536
+Checksum: 5d657b1a6dfc7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00033.sum ../output/part-00033
+Records: 648970
+Checksum: 4f3589beac2c7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00034.sum ../output/part-00034
+Records: 523818
+Checksum: 4004801ef6ffd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00035.sum ../output/part-00035
+Records: 660235
+Checksum: 5087c415374b8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00036.sum ../output/part-00036
+Records: 656565
+Checksum: 502f20d72fcf4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00037.sum ../output/part-00037
+Records: 509120
+Checksum: 3e2e757a358ed
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00038.sum ../output/part-00038
+Records: 721662
+Checksum: 58126d570aa91
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00039.sum ../output/part-00039
+Records: 747199
+Checksum: 5b1e90afbe27d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00040.sum ../output/part-00040
+Records: 534775
+Checksum: 4132d859ff472
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00041.sum ../output/part-00041
+Records: 693037
+Checksum: 54a3c199d2767
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00042.sum ../output/part-00042
+Records: 659891
+Checksum: 507dd032ea0a2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00043.sum ../output/part-00043
+Records: 700405
+Checksum: 556da316708ad
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00044.sum ../output/part-00044
+Records: 462260
+Checksum: 387a740a5a722
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00045.sum ../output/part-00045
+Records: 665522
+Checksum: 514b2a53c9299
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00046.sum ../output/part-00046
+Records: 974747
+Checksum: 7719d064be903
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00047.sum ../output/part-00047
+Records: 819511
+Checksum: 63fe85f35921a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00048.sum ../output/part-00048
+Records: 693300
+Checksum: 54a1dbb5fb225
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00049.sum ../output/part-00049
+Records: 622015
+Checksum: 4bfadf7579d7f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00050.sum ../output/part-00050
+Records: 749481
+Checksum: 5b6e5b882717c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00051.sum ../output/part-00051
+Records: 783632
+Checksum: 5fae9ed3961db
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00052.sum ../output/part-00052
+Records: 549705
+Checksum: 4315f3a31df89
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00053.sum ../output/part-00053
+Records: 841902
+Checksum: 66bba4d8d24f3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00054.sum ../output/part-00054
+Records: 734438
+Checksum: 59970f630c13f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00055.sum ../output/part-00055
+Records: 427887
+Checksum: 344866ba9a441
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00056.sum ../output/part-00056
+Records: 561667
+Checksum: 4493fd11a6646
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00057.sum ../output/part-00057
+Records: 845003
+Checksum: 672a130bf3995
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00058.sum ../output/part-00058
+Records: 546663
+Checksum: 42ad8484fa803
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00059.sum ../output/part-00059
+Records: 597790
+Checksum: 48fa92a8daa87
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00060.sum ../output/part-00060
+Records: 648593
+Checksum: 4f1e174c983d9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00061.sum ../output/part-00061
+Records: 598413
+Checksum: 491335b3ebe82
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00062.sum ../output/part-00062
+Records: 771284
+Checksum: 5e256625247de
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00063.sum ../output/part-00063
+Records: 726875
+Checksum: 58b0283a54495
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00064.sum ../output/part-00064
+Records: 805120
+Checksum: 625a0b031bbbe
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00065.sum ../output/part-00065
+Records: 592301
+Checksum: 487510175fa54
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00066.sum ../output/part-00066
+Records: 710625
+Checksum: 56aef91134a55
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00067.sum ../output/part-00067
+Records: 718823
+Checksum: 57d67f0ac3340
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00068.sum ../output/part-00068
+Records: 634753
+Checksum: 4d6d8ee045ef2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00069.sum ../output/part-00069
+Records: 622137
+Checksum: 4bf3bd30d5671
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00070.sum ../output/part-00070
+Records: 653516
+Checksum: 4fd5e9ba8a760
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00071.sum ../output/part-00071
+Records: 785511
+Checksum: 5fe2cbfde1ddd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00072.sum ../output/part-00072
+Records: 597943
+Checksum: 48e5511f9e0c8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00073.sum ../output/part-00073
+Records: 618280
+Checksum: 4b8f1ca90525f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00074.sum ../output/part-00074
+Records: 677912
+Checksum: 52ccc08be16d3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00075.sum ../output/part-00075
+Records: 620748
+Checksum: 4bcf6dae1a39f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00076.sum ../output/part-00076
+Records: 739892
+Checksum: 5a1f9ef8f1cb7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00077.sum ../output/part-00077
+Records: 565535
+Checksum: 45241a376fbd8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00078.sum ../output/part-00078
+Records: 923342
+Checksum: 70af21c797649
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00079.sum ../output/part-00079
+Records: 603006
+Checksum: 499570074622d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00080.sum ../output/part-00080
+Records: 709367
+Checksum: 56ae052e68bb8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00081.sum ../output/part-00081
+Records: 664455
+Checksum: 512f29f952bca
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00082.sum ../output/part-00082
+Records: 649281
+Checksum: 4f44fcf3b91dc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00083.sum ../output/part-00083
+Records: 669923
+Checksum: 51c6b15e9ea8e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00084.sum ../output/part-00084
+Records: 642815
+Checksum: 4e7692f17b683
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00085.sum ../output/part-00085
+Records: 551372
+Checksum: 4345016e92a35
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00086.sum ../output/part-00086
+Records: 681105
+Checksum: 53350e36e780c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00087.sum ../output/part-00087
+Records: 524558
+Checksum: 4001cb60f6f66
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00088.sum ../output/part-00088
+Records: 572028
+Checksum: 45c797850a8b5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00089.sum ../output/part-00089
+Records: 760963
+Checksum: 5cdcac98d9b60
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00090.sum ../output/part-00090
+Records: 789376
+Checksum: 605fd60dd2065
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00091.sum ../output/part-00091
+Records: 620049
+Checksum: 4baf64d240c57
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00092.sum ../output/part-00092
+Records: 693820
+Checksum: 54b263fbe2f75
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00093.sum ../output/part-00093
+Records: 702638
+Checksum: 55d2fcb68dd0b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00094.sum ../output/part-00094
+Records: 786586
+Checksum: 5ffceeb7eace1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00095.sum ../output/part-00095
+Records: 729686
+Checksum: 591129e257452
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00096.sum ../output/part-00096
+Records: 740376
+Checksum: 5a6d837565572
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00097.sum ../output/part-00097
+Records: 745946
+Checksum: 5b1b2009b0af9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00098.sum ../output/part-00098
+Records: 814059
+Checksum: 6362da3d943e0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00099.sum ../output/part-00099
+Records: 611174
+Checksum: 4aacd021c4c02
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00100.sum ../output/part-00100
+Records: 541912
+Checksum: 422d132a5b75d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00101.sum ../output/part-00101
+Records: 663392
+Checksum: 510b398ddddda
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00102.sum ../output/part-00102
+Records: 457635
+Checksum: 37e1671003a1f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00103.sum ../output/part-00103
+Records: 635508
+Checksum: 4d90c9fbde443
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00104.sum ../output/part-00104
+Records: 547173
+Checksum: 42cf1670c8db1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00105.sum ../output/part-00105
+Records: 595719
+Checksum: 48b35d384243c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00106.sum ../output/part-00106
+Records: 578547
+Checksum: 46aab7c418b34
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00107.sum ../output/part-00107
+Records: 753553
+Checksum: 5bdd095a9e297
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00108.sum ../output/part-00108
+Records: 664915
+Checksum: 513765e596b67
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00109.sum ../output/part-00109
+Records: 721935
+Checksum: 580806233e8e9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00110.sum ../output/part-00110
+Records: 601246
+Checksum: 49606423e9914
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00111.sum ../output/part-00111
+Records: 725864
+Checksum: 58b2102fa4305
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00112.sum ../output/part-00112
+Records: 669036
+Checksum: 51baa118afd09
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00113.sum ../output/part-00113
+Records: 747652
+Checksum: 5b2cf6826621c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00114.sum ../output/part-00114
+Records: 798988
+Checksum: 619c75b1246f3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00115.sum ../output/part-00115
+Records: 724865
+Checksum: 5891b14e0332d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00116.sum ../output/part-00116
+Records: 638693
+Checksum: 4df51595456e9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00117.sum ../output/part-00117
+Records: 734738
+Checksum: 59a3edf3e03f0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00118.sum ../output/part-00118
+Records: 674328
+Checksum: 52542ff0a1b3a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00119.sum ../output/part-00119
+Records: 547497
+Checksum: 42d17f1839700
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00120.sum ../output/part-00120
+Records: 746140
+Checksum: 5afc7b91e65fd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00121.sum ../output/part-00121
+Records: 710934
+Checksum: 56e709c1785f6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00122.sum ../output/part-00122
+Records: 519861
+Checksum: 3f72285c343e4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00123.sum ../output/part-00123
+Records: 572946
+Checksum: 45e61e2093a13
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00124.sum ../output/part-00124
+Records: 642573
+Checksum: 4e72a34502f18
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00125.sum ../output/part-00125
+Records: 630936
+Checksum: 4d028cab30195
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00126.sum ../output/part-00126
+Records: 711183
+Checksum: 56dab78535c19
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00127.sum ../output/part-00127
+Records: 671243
+Checksum: 51eee468d2f92
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00128.sum ../output/part-00128
+Records: 855898
+Checksum: 687e439691611
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00129.sum ../output/part-00129
+Records: 739510
+Checksum: 5a47bce65e586
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00130.sum ../output/part-00130
+Records: 768488
+Checksum: 5de35b85dfa85
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00131.sum ../output/part-00131
+Records: 651680
+Checksum: 4fa71f5dbbe34
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00132.sum ../output/part-00132
+Records: 593681
+Checksum: 4888a3caf2bb0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00133.sum ../output/part-00133
+Records: 620288
+Checksum: 4bca3375e846a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00134.sum ../output/part-00134
+Records: 749027
+Checksum: 5b681bae32b0b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00135.sum ../output/part-00135
+Records: 657925
+Checksum: 50385af7b17d3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00136.sum ../output/part-00136
+Records: 713027
+Checksum: 56fa5e4cb1dc8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00137.sum ../output/part-00137
+Records: 743392
+Checksum: 5ac31a02612e4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00138.sum ../output/part-00138
+Records: 673503
+Checksum: 5239f4d5483f1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00139.sum ../output/part-00139
+Records: 675812
+Checksum: 52985694b2bfa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00140.sum ../output/part-00140
+Records: 577506
+Checksum: 469b3c5e87f1c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00141.sum ../output/part-00141
+Records: 712488
+Checksum: 56ee41b3acaed
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00142.sum ../output/part-00142
+Records: 591238
+Checksum: 4821423891941
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00143.sum ../output/part-00143
+Records: 667019
+Checksum: 51757dd97b609
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00144.sum ../output/part-00144
+Records: 656927
+Checksum: 5028438f9c530
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00145.sum ../output/part-00145
+Records: 785262
+Checksum: 5fe145d28a888
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00146.sum ../output/part-00146
+Records: 578776
+Checksum: 46ab670526d1b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00147.sum ../output/part-00147
+Records: 709384
+Checksum: 566782d00bf17
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00148.sum ../output/part-00148
+Records: 771506
+Checksum: 5e2b099e7da2f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00149.sum ../output/part-00149
+Records: 661476
+Checksum: 50c8942dbdd35
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00150.sum ../output/part-00150
+Records: 520838
+Checksum: 3f93764463036
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00151.sum ../output/part-00151
+Records: 652670
+Checksum: 4fbb527d7cdd6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00152.sum ../output/part-00152
+Records: 577015
+Checksum: 464b611909389
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00153.sum ../output/part-00153
+Records: 502630
+Checksum: 3d5bbb283aa7e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00154.sum ../output/part-00154
+Records: 653058
+Checksum: 4fa0e056bdbb6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00155.sum ../output/part-00155
+Records: 561609
+Checksum: 4489e20c372ff
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00156.sum ../output/part-00156
+Records: 680758
+Checksum: 531fad0e769f3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00157.sum ../output/part-00157
+Records: 579617
+Checksum: 46cdfecb9ac95
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00158.sum ../output/part-00158
+Records: 694606
+Checksum: 54d48b581f9a5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00159.sum ../output/part-00159
+Records: 607978
+Checksum: 4a28905f6bfb4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00160.sum ../output/part-00160
+Records: 569299
+Checksum: 4582dc147f1e9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00161.sum ../output/part-00161
+Records: 784990
+Checksum: 5fe124dc3b0cd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00162.sum ../output/part-00162
+Records: 638781
+Checksum: 4e05617c9c757
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00163.sum ../output/part-00163
+Records: 563560
+Checksum: 44c964265b549
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00164.sum ../output/part-00164
+Records: 629050
+Checksum: 4ccf111dea50c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00165.sum ../output/part-00165
+Records: 750424
+Checksum: 5b995638f3fc7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00166.sum ../output/part-00166
+Records: 757872
+Checksum: 5c85202b134e5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00167.sum ../output/part-00167
+Records: 674907
+Checksum: 52530a08ae0aa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00168.sum ../output/part-00168
+Records: 568449
+Checksum: 4560aff39ff51
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00169.sum ../output/part-00169
+Records: 769145
+Checksum: 5dc3381208668
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00170.sum ../output/part-00170
+Records: 643610
+Checksum: 4eb3c331fc83a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00171.sum ../output/part-00171
+Records: 737278
+Checksum: 5a025be49d540
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00172.sum ../output/part-00172
+Records: 756667
+Checksum: 5c47e2242e135
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00173.sum ../output/part-00173
+Records: 691919
+Checksum: 54806a7544113
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00174.sum ../output/part-00174
+Records: 755764
+Checksum: 5c4864924a123
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00175.sum ../output/part-00175
+Records: 575663
+Checksum: 46427499828a9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00176.sum ../output/part-00176
+Records: 791112
+Checksum: 6088b3a2bbf38
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00177.sum ../output/part-00177
+Records: 679427
+Checksum: 52e87d1b944f6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00178.sum ../output/part-00178
+Records: 675843
+Checksum: 527e42857a736
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00179.sum ../output/part-00179
+Records: 712793
+Checksum: 5706970e76256
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00180.sum ../output/part-00180
+Records: 726219
+Checksum: 58a5206870ade
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00181.sum ../output/part-00181
+Records: 689391
+Checksum: 543cb34b70b55
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00182.sum ../output/part-00182
+Records: 490061
+Checksum: 3bdf79965c7ca
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00183.sum ../output/part-00183
+Records: 868709
+Checksum: 6a117b2912210
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00184.sum ../output/part-00184
+Records: 730485
+Checksum: 592ea87d1f02c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00185.sum ../output/part-00185
+Records: 685217
+Checksum: 539b62ab86dae
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00186.sum ../output/part-00186
+Records: 757615
+Checksum: 5c89a18446908
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00187.sum ../output/part-00187
+Records: 828602
+Checksum: 653ad9fe2a620
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00188.sum ../output/part-00188
+Records: 563307
+Checksum: 44b8b7b460d26
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00189.sum ../output/part-00189
+Records: 731441
+Checksum: 59369738e3ba2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00190.sum ../output/part-00190
+Records: 573228
+Checksum: 45e9cc8869a9c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00191.sum ../output/part-00191
+Records: 563071
+Checksum: 44bfff88d907b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00192.sum ../output/part-00192
+Records: 762728
+Checksum: 5d1b90e7d1365
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00193.sum ../output/part-00193
+Records: 783233
+Checksum: 5fb41d8c91d1a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00194.sum ../output/part-00194
+Records: 673164
+Checksum: 520d3f25ee68f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00195.sum ../output/part-00195
+Records: 804011
+Checksum: 62285dcab123d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00196.sum ../output/part-00196
+Records: 603560
+Checksum: 49c0dc12c38a9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00197.sum ../output/part-00197
+Records: 517955
+Checksum: 3f4842a0ad857
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00198.sum ../output/part-00198
+Records: 531341
+Checksum: 40d061d233cbc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00199.sum ../output/part-00199
+Records: 446969
+Checksum: 368fc58b48070
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00200.sum ../output/part-00200
+Records: 545281
+Checksum: 427b76b84d130
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00201.sum ../output/part-00201
+Records: 566294
+Checksum: 4522722ef45e2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00202.sum ../output/part-00202
+Records: 654488
+Checksum: 4fda343b34d0b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00203.sum ../output/part-00203
+Records: 624562
+Checksum: 4c500d0934ca7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00204.sum ../output/part-00204
+Records: 744862
+Checksum: 5ae8478003888
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00205.sum ../output/part-00205
+Records: 734486
+Checksum: 59ae3de2d0394
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00206.sum ../output/part-00206
+Records: 632231
+Checksum: 4d2cd0ee6c550
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00207.sum ../output/part-00207
+Records: 799802
+Checksum: 61965bb75cc4d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00208.sum ../output/part-00208
+Records: 639299
+Checksum: 4e037c460391b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00209.sum ../output/part-00209
+Records: 589782
+Checksum: 480f4f4d731cc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00210.sum ../output/part-00210
+Records: 525082
+Checksum: 40223ed4897d0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00211.sum ../output/part-00211
+Records: 815326
+Checksum: 638d5c0edeff6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00212.sum ../output/part-00212
+Records: 683406
+Checksum: 534c92f304d79
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00213.sum ../output/part-00213
+Records: 657610
+Checksum: 505746f41a79e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00214.sum ../output/part-00214
+Records: 563296
+Checksum: 44d810683debc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00215.sum ../output/part-00215
+Records: 552838
+Checksum: 436f42b2af167
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00216.sum ../output/part-00216
+Records: 801124
+Checksum: 61d40d81b401a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00217.sum ../output/part-00217
+Records: 591813
+Checksum: 48442af47d8e6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00218.sum ../output/part-00218
+Records: 689480
+Checksum: 54272b3501bcb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00219.sum ../output/part-00219
+Records: 635295
+Checksum: 4d76349661f28
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00220.sum ../output/part-00220
+Records: 662384
+Checksum: 50ebc1b2cbd83
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00221.sum ../output/part-00221
+Records: 716683
+Checksum: 5794ca81227e8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00222.sum ../output/part-00222
+Records: 596961
+Checksum: 48fa0ad006f7b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00223.sum ../output/part-00223
+Records: 656088
+Checksum: 50162bed0b46d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00224.sum ../output/part-00224
+Records: 730830
+Checksum: 593b62c35f8c7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00225.sum ../output/part-00225
+Records: 642914
+Checksum: 4e6afec37638e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00226.sum ../output/part-00226
+Records: 732456
+Checksum: 5967acc339f48
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00227.sum ../output/part-00227
+Records: 577105
+Checksum: 4665630f3939f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00228.sum ../output/part-00228
+Records: 740306
+Checksum: 5a6ab9f3b40c0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00229.sum ../output/part-00229
+Records: 646313
+Checksum: 4ee8d07faa34f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00230.sum ../output/part-00230
+Records: 622784
+Checksum: 4bfa38364b1e5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00231.sum ../output/part-00231
+Records: 493732
+Checksum: 3c359dc123a4a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00232.sum ../output/part-00232
+Records: 517735
+Checksum: 3f3441330462b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00233.sum ../output/part-00233
+Records: 532849
+Checksum: 41001545d1ee2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00234.sum ../output/part-00234
+Records: 673849
+Checksum: 5237086672ca7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00235.sum ../output/part-00235
+Records: 677405
+Checksum: 52b9540eb72b5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00236.sum ../output/part-00236
+Records: 784618
+Checksum: 5fc06622558f2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00237.sum ../output/part-00237
+Records: 699948
+Checksum: 55720b29d7678
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00238.sum ../output/part-00238
+Records: 541528
+Checksum: 421ac63284e45
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00239.sum ../output/part-00239
+Records: 781031
+Checksum: 5f63c7ba126e5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00240.sum ../output/part-00240
+Records: 746518
+Checksum: 5b323d15e7a1a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00241.sum ../output/part-00241
+Records: 681660
+Checksum: 534fdb24b5d25
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00242.sum ../output/part-00242
+Records: 669862
+Checksum: 51bbe8b0c545a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00243.sum ../output/part-00243
+Records: 641510
+Checksum: 4e56548836875
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00244.sum ../output/part-00244
+Records: 809220
+Checksum: 62c3fca1c8274
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00245.sum ../output/part-00245
+Records: 894127
+Checksum: 6d281e3434d39
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00246.sum ../output/part-00246
+Records: 834660
+Checksum: 65de5956d7317
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00247.sum ../output/part-00247
+Records: 620050
+Checksum: 4baa8467f4809
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00248.sum ../output/part-00248
+Records: 707231
+Checksum: 5675b64077b7f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00249.sum ../output/part-00249
+Records: 711594
+Checksum: 56e2bf681c312
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00250.sum ../output/part-00250
+Records: 841431
+Checksum: 669798657dd04
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00251.sum ../output/part-00251
+Records: 707591
+Checksum: 5679a9ad97ac4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00252.sum ../output/part-00252
+Records: 785673
+Checksum: 5feb11b354e77
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00253.sum ../output/part-00253
+Records: 558150
+Checksum: 44132e1408898
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00254.sum ../output/part-00254
+Records: 546437
+Checksum: 42bd8bcd63a70
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00255.sum ../output/part-00255
+Records: 914483
+Checksum: 6f9eb5819c4bf
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00256.sum ../output/part-00256
+Records: 765308
+Checksum: 5d67107202088
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00257.sum ../output/part-00257
+Records: 587389
+Checksum: 47afeb9fd3ad6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00258.sum ../output/part-00258
+Records: 747199
+Checksum: 5b359afa28cc3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00259.sum ../output/part-00259
+Records: 735510
+Checksum: 59bd45624dc66
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00260.sum ../output/part-00260
+Records: 631650
+Checksum: 4d15f8fbc0c7f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00261.sum ../output/part-00261
+Records: 700160
+Checksum: 556bed7d12202
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00262.sum ../output/part-00262
+Records: 682839
+Checksum: 5361e9ae0c0fd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00263.sum ../output/part-00263
+Records: 653505
+Checksum: 4fbb26c43d421
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00264.sum ../output/part-00264
+Records: 847263
+Checksum: 6785c91017ae6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00265.sum ../output/part-00265
+Records: 828106
+Checksum: 652c2c531e3c7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00266.sum ../output/part-00266
+Records: 856484
+Checksum: 687bc38c75dc6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00267.sum ../output/part-00267
+Records: 658090
+Checksum: 50589025aea94
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00268.sum ../output/part-00268
+Records: 561905
+Checksum: 4493a15a5626d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00269.sum ../output/part-00269
+Records: 758968
+Checksum: 5cb2071f7e265
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00270.sum ../output/part-00270
+Records: 756444
+Checksum: 5c4c55dff0c3d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00271.sum ../output/part-00271
+Records: 555721
+Checksum: 43c08d81cbe58
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00272.sum ../output/part-00272
+Records: 698944
+Checksum: 5541f9f404026
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00273.sum ../output/part-00273
+Records: 677430
+Checksum: 52b5114123384
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00274.sum ../output/part-00274
+Records: 666229
+Checksum: 515434b8f7602
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00275.sum ../output/part-00275
+Records: 736723
+Checksum: 59e156b2c9e85
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00276.sum ../output/part-00276
+Records: 595605
+Checksum: 48b086e960cd9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00277.sum ../output/part-00277
+Records: 713329
+Checksum: 571229eff844a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00278.sum ../output/part-00278
+Records: 695498
+Checksum: 54f25b440f04c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00279.sum ../output/part-00279
+Records: 667570
+Checksum: 51882fc6a3233
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00280.sum ../output/part-00280
+Records: 684900
+Checksum: 537aebb3fdab5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00281.sum ../output/part-00281
+Records: 605112
+Checksum: 49c74d89f66f7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00282.sum ../output/part-00282
+Records: 609895
+Checksum: 4a68c2fd196c6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00283.sum ../output/part-00283
+Records: 512933
+Checksum: 3e8fd08309c27
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00284.sum ../output/part-00284
+Records: 791624
+Checksum: 60aa98b1f573a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00285.sum ../output/part-00285
+Records: 719093
+Checksum: 57c864d845709
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00286.sum ../output/part-00286
+Records: 676668
+Checksum: 528cd233f126e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00287.sum ../output/part-00287
+Records: 694250
+Checksum: 54ba10317439c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00288.sum ../output/part-00288
+Records: 769170
+Checksum: 5def15d4453b4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00289.sum ../output/part-00289
+Records: 735994
+Checksum: 59ccc44425291
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00290.sum ../output/part-00290
+Records: 689682
+Checksum: 5437fedf35f54
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00291.sum ../output/part-00291
+Records: 500489
+Checksum: 3d1cc798762db
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00292.sum ../output/part-00292
+Records: 802955
+Checksum: 61e01f3d9da32
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00293.sum ../output/part-00293
+Records: 434415
+Checksum: 3510a27d1da8f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00294.sum ../output/part-00294
+Records: 624150
+Checksum: 4c409a06793ca
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00295.sum ../output/part-00295
+Records: 650629
+Checksum: 4f611dce29059
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00296.sum ../output/part-00296
+Records: 752891
+Checksum: 5bfb60a6cb0ed
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00297.sum ../output/part-00297
+Records: 713153
+Checksum: 57128f66a3a76
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00298.sum ../output/part-00298
+Records: 671126
+Checksum: 51ec0908e5687
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00299.sum ../output/part-00299
+Records: 604730
+Checksum: 49eff80c3e0c7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00300.sum ../output/part-00300
+Records: 672503
+Checksum: 52175b1265419
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00301.sum ../output/part-00301
+Records: 541697
+Checksum: 422961aec00a1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00302.sum ../output/part-00302
+Records: 555755
+Checksum: 43d0b97536c79
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00303.sum ../output/part-00303
+Records: 592744
+Checksum: 4861b222309b4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00304.sum ../output/part-00304
+Records: 634073
+Checksum: 4d50e8c48aac3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00305.sum ../output/part-00305
+Records: 554931
+Checksum: 43a29a01e6fe0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00306.sum ../output/part-00306
+Records: 776259
+Checksum: 5ea55bcb06658
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00307.sum ../output/part-00307
+Records: 619745
+Checksum: 4bb6e818430c5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00308.sum ../output/part-00308
+Records: 603810
+Checksum: 49bfff054640f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00309.sum ../output/part-00309
+Records: 536388
+Checksum: 417e4ee2a9d95
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00310.sum ../output/part-00310
+Records: 668855
+Checksum: 5197b4e6a151c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00311.sum ../output/part-00311
+Records: 641714
+Checksum: 4e505a140fe42
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00312.sum ../output/part-00312
+Records: 627266
+Checksum: 4c9243d39dcb9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00313.sum ../output/part-00313
+Records: 587228
+Checksum: 47b65b8e39ac5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00314.sum ../output/part-00314
+Records: 744553
+Checksum: 5aca76c5f4fff
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00315.sum ../output/part-00315
+Records: 660850
+Checksum: 50b641866b387
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00316.sum ../output/part-00316
+Records: 640045
+Checksum: 4e25f4d0e4405
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00317.sum ../output/part-00317
+Records: 707609
+Checksum: 566b27857cf72
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00318.sum ../output/part-00318
+Records: 886865
+Checksum: 6c2e675772e34
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00319.sum ../output/part-00319
+Records: 578530
+Checksum: 46aa4dab9ff55
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00320.sum ../output/part-00320
+Records: 691378
+Checksum: 547384212d350
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00321.sum ../output/part-00321
+Records: 641503
+Checksum: 4e4e8a0c56b59
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00322.sum ../output/part-00322
+Records: 603081
+Checksum: 49a89fe3dde57
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00323.sum ../output/part-00323
+Records: 608246
+Checksum: 4a30aea36510b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00324.sum ../output/part-00324
+Records: 751502
+Checksum: 5bb44946ca635
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00325.sum ../output/part-00325
+Records: 630218
+Checksum: 4cfb07f135015
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00326.sum ../output/part-00326
+Records: 743959
+Checksum: 5ada77b822fbd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00327.sum ../output/part-00327
+Records: 525367
+Checksum: 4020cde0faeeb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00328.sum ../output/part-00328
+Records: 619302
+Checksum: 4b9b97e328ae9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00329.sum ../output/part-00329
+Records: 802274
+Checksum: 61f55ab2a7119
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00330.sum ../output/part-00330
+Records: 643775
+Checksum: 4e92e2ddcc180
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00331.sum ../output/part-00331
+Records: 695237
+Checksum: 54da1b39691b6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00332.sum ../output/part-00332
+Records: 650313
+Checksum: 4f6ad1b513cb4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00333.sum ../output/part-00333
+Records: 480115
+Checksum: 3a9db6e098317
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00334.sum ../output/part-00334
+Records: 691105
+Checksum: 544d57b79627b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00335.sum ../output/part-00335
+Records: 552861
+Checksum: 438994299e300
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00336.sum ../output/part-00336
+Records: 627704
+Checksum: 4cb3379116fc6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00337.sum ../output/part-00337
+Records: 743825
+Checksum: 5ac457034dde8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00338.sum ../output/part-00338
+Records: 636593
+Checksum: 4db57838b8576
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00339.sum ../output/part-00339
+Records: 646170
+Checksum: 4edc21cacab77
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00340.sum ../output/part-00340
+Records: 519083
+Checksum: 3f59cd80ce79b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00341.sum ../output/part-00341
+Records: 708614
+Checksum: 56817cbd7f60d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00342.sum ../output/part-00342
+Records: 683139
+Checksum: 535fed583496b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00343.sum ../output/part-00343
+Records: 662118
+Checksum: 50dac66bdf616
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00344.sum ../output/part-00344
+Records: 697398
+Checksum: 552f0e00fb3e6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00345.sum ../output/part-00345
+Records: 636053
+Checksum: 4dc1bccb8c930
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00346.sum ../output/part-00346
+Records: 706330
+Checksum: 5628c0d366931
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00347.sum ../output/part-00347
+Records: 713723
+Checksum: 573d59137234a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00348.sum ../output/part-00348
+Records: 715319
+Checksum: 575bc629e7ca6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00349.sum ../output/part-00349
+Records: 698340
+Checksum: 5536273be4aa0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00350.sum ../output/part-00350
+Records: 631788
+Checksum: 4d1866127cfe4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00351.sum ../output/part-00351
+Records: 696842
+Checksum: 550ebb1b2e5ce
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00352.sum ../output/part-00352
+Records: 564864
+Checksum: 44dfd6cac8525
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00353.sum ../output/part-00353
+Records: 627675
+Checksum: 4ca300badf725
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00354.sum ../output/part-00354
+Records: 598796
+Checksum: 492ae18666bb3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00355.sum ../output/part-00355
+Records: 647861
+Checksum: 4f13e3b4a427a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00356.sum ../output/part-00356
+Records: 634486
+Checksum: 4d6e8de63397e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00357.sum ../output/part-00357
+Records: 793910
+Checksum: 60f428c2d208b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00358.sum ../output/part-00358
+Records: 648857
+Checksum: 4f1608e75f6bf
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00359.sum ../output/part-00359
+Records: 610769
+Checksum: 4a8096f2f42fc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00360.sum ../output/part-00360
+Records: 641820
+Checksum: 4e560b5f35aa8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00361.sum ../output/part-00361
+Records: 730345
+Checksum: 592613de7264e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00362.sum ../output/part-00362
+Records: 664571
+Checksum: 511f7d98ef5ee
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00363.sum ../output/part-00363
+Records: 474243
+Checksum: 39d6d5b4c4e53
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00364.sum ../output/part-00364
+Records: 742794
+Checksum: 5ab07faa88d0d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00365.sum ../output/part-00365
+Records: 767376
+Checksum: 5da6647bd9673
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00366.sum ../output/part-00366
+Records: 858203
+Checksum: 68c658d88220a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00367.sum ../output/part-00367
+Records: 543343
+Checksum: 42594e9003abd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00368.sum ../output/part-00368
+Records: 640208
+Checksum: 4df0a17edae39
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00369.sum ../output/part-00369
+Records: 764112
+Checksum: 5d4d5f74dfbf0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00370.sum ../output/part-00370
+Records: 864348
+Checksum: 69800cf10bcf9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00371.sum ../output/part-00371
+Records: 519389
+Checksum: 3f639f309bcfa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00372.sum ../output/part-00372
+Records: 817627
+Checksum: 63ceed409d138
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00373.sum ../output/part-00373
+Records: 555051
+Checksum: 43c267d2f4a57
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00374.sum ../output/part-00374
+Records: 764642
+Checksum: 5d5c75ae5e89f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00375.sum ../output/part-00375
+Records: 599791
+Checksum: 4935bb4fca494
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00376.sum ../output/part-00376
+Records: 699068
+Checksum: 554cddc3dbb4b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00377.sum ../output/part-00377
+Records: 633974
+Checksum: 4d4cd4e67f86a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00378.sum ../output/part-00378
+Records: 699441
+Checksum: 5567e5949a8b8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00379.sum ../output/part-00379
+Records: 639245
+Checksum: 4e0fdc9f9cb30
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00380.sum ../output/part-00380
+Records: 775552
+Checksum: 5eabc473fe6cd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00381.sum ../output/part-00381
+Records: 716797
+Checksum: 5781f8c054d84
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00382.sum ../output/part-00382
+Records: 772706
+Checksum: 5e53211be7643
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00383.sum ../output/part-00383
+Records: 669686
+Checksum: 51c825778bf2e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00384.sum ../output/part-00384
+Records: 604043
+Checksum: 49b55669458c4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00385.sum ../output/part-00385
+Records: 599950
+Checksum: 49439b3ea54be
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00386.sum ../output/part-00386
+Records: 607120
+Checksum: 4a10d5b163ea1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00387.sum ../output/part-00387
+Records: 696915
+Checksum: 5508435c303e7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00388.sum ../output/part-00388
+Records: 673230
+Checksum: 5222a40b020a5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00389.sum ../output/part-00389
+Records: 667320
+Checksum: 516d8391269eb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00390.sum ../output/part-00390
+Records: 516886
+Checksum: 3f2ed8bffa5da
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00391.sum ../output/part-00391
+Records: 702136
+Checksum: 55ae805d71e95
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00392.sum ../output/part-00392
+Records: 596187
+Checksum: 48d6d782ff5a5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00393.sum ../output/part-00393
+Records: 540900
+Checksum: 4207b84965a71
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00394.sum ../output/part-00394
+Records: 610208
+Checksum: 4a88601e24853
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00395.sum ../output/part-00395
+Records: 857336
+Checksum: 68c7705567219
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00396.sum ../output/part-00396
+Records: 745461
+Checksum: 5afeda9ebc367
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00397.sum ../output/part-00397
+Records: 615916
+Checksum: 4b1ab97dc5aa8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00398.sum ../output/part-00398
+Records: 601267
+Checksum: 495cc7179198d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00399.sum ../output/part-00399
+Records: 796235
+Checksum: 612e73ebdff48
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00400.sum ../output/part-00400
+Records: 780083
+Checksum: 5f210f62d40d5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00401.sum ../output/part-00401
+Records: 749205
+Checksum: 5b8100745acc7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00402.sum ../output/part-00402
+Records: 763703
+Checksum: 5d3a67feefb49
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00403.sum ../output/part-00403
+Records: 708673
+Checksum: 567f5fa2b8862
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00404.sum ../output/part-00404
+Records: 569526
+Checksum: 457dcfdb04d44
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00405.sum ../output/part-00405
+Records: 651421
+Checksum: 4f93ec0beeec1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00406.sum ../output/part-00406
+Records: 1027275
+Checksum: 7d6520acad57b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00407.sum ../output/part-00407
+Records: 574539
+Checksum: 4617104911b96
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00408.sum ../output/part-00408
+Records: 772415
+Checksum: 5e3af78ebbff4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00409.sum ../output/part-00409
+Records: 706673
+Checksum: 56392284d4780
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00410.sum ../output/part-00410
+Records: 680701
+Checksum: 53275aa2e57e4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00411.sum ../output/part-00411
+Records: 650261
+Checksum: 4f533f7358a5d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00412.sum ../output/part-00412
+Records: 644664
+Checksum: 4eb0f1b8a747f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00413.sum ../output/part-00413
+Records: 642403
+Checksum: 4e604c2ffd799
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00414.sum ../output/part-00414
+Records: 756916
+Checksum: 5c52a83adf32b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00415.sum ../output/part-00415
+Records: 519409
+Checksum: 3f6405f8eadc7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00416.sum ../output/part-00416
+Records: 621153
+Checksum: 4bd4324d05cdc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00417.sum ../output/part-00417
+Records: 704231
+Checksum: 55f449b5448a2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00418.sum ../output/part-00418
+Records: 814923
+Checksum: 637cc41a1a583
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00419.sum ../output/part-00419
+Records: 565032
+Checksum: 450466d615952
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00420.sum ../output/part-00420
+Records: 620956
+Checksum: 4be9651058fdb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00421.sum ../output/part-00421
+Records: 573664
+Checksum: 45f4b0f598428
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00422.sum ../output/part-00422
+Records: 654039
+Checksum: 4fddb848b26d0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00423.sum ../output/part-00423
+Records: 741138
+Checksum: 5a962beed2ae7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00424.sum ../output/part-00424
+Records: 602399
+Checksum: 49963608de812
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00425.sum ../output/part-00425
+Records: 654563
+Checksum: 4fdfe7f8efce7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00426.sum ../output/part-00426
+Records: 643674
+Checksum: 4ea773de340bc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00427.sum ../output/part-00427
+Records: 606189
+Checksum: 49f64d6ae82e7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00428.sum ../output/part-00428
+Records: 612576
+Checksum: 4abcac4c87147
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00429.sum ../output/part-00429
+Records: 517072
+Checksum: 3f192db1d8cd9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00430.sum ../output/part-00430
+Records: 713268
+Checksum: 571c68b62ded4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00431.sum ../output/part-00431
+Records: 749982
+Checksum: 5b86b519b0d6e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00432.sum ../output/part-00432
+Records: 738122
+Checksum: 5a16ad2d12c19
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00433.sum ../output/part-00433
+Records: 608968
+Checksum: 4a5ca7bf30720
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00434.sum ../output/part-00434
+Records: 739028
+Checksum: 5a4e1055b820b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00435.sum ../output/part-00435
+Records: 641358
+Checksum: 4e3f6df75fa3c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00436.sum ../output/part-00436
+Records: 676492
+Checksum: 529aeb5ea3c0d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00437.sum ../output/part-00437
+Records: 523058
+Checksum: 3fde338317e50
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00438.sum ../output/part-00438
+Records: 692502
+Checksum: 546bcceddbcf6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00439.sum ../output/part-00439
+Records: 625123
+Checksum: 4c47ebbcaa46c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00440.sum ../output/part-00440
+Records: 793752
+Checksum: 60e9d626a7b6c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00441.sum ../output/part-00441
+Records: 736454
+Checksum: 59c5bfc6bf4db
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00442.sum ../output/part-00442
+Records: 645842
+Checksum: 4ef2b6fec961c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00443.sum ../output/part-00443
+Records: 681020
+Checksum: 532510b6f2d05
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00444.sum ../output/part-00444
+Records: 571628
+Checksum: 45ccc2f6d675e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00445.sum ../output/part-00445
+Records: 744947
+Checksum: 5afd7b83a0226
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00446.sum ../output/part-00446
+Records: 776499
+Checksum: 5edac8833f601
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00447.sum ../output/part-00447
+Records: 720853
+Checksum: 580420d1e084e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00448.sum ../output/part-00448
+Records: 611604
+Checksum: 4aa4c08ff3eff
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00449.sum ../output/part-00449
+Records: 714120
+Checksum: 57332127230ce
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00450.sum ../output/part-00450
+Records: 788482
+Checksum: 604161b973f39
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00451.sum ../output/part-00451
+Records: 813115
+Checksum: 6341483c3b147
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00452.sum ../output/part-00452
+Records: 579639
+Checksum: 46d8c621f2b1c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00453.sum ../output/part-00453
+Records: 748697
+Checksum: 5b5c519992b82
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00454.sum ../output/part-00454
+Records: 554270
+Checksum: 43a4f36e04401
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00455.sum ../output/part-00455
+Records: 659176
+Checksum: 508f02fd584cb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00456.sum ../output/part-00456
+Records: 619264
+Checksum: 4b8bf047fcdb5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00457.sum ../output/part-00457
+Records: 680536
+Checksum: 52eb63dc7f0f0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00458.sum ../output/part-00458
+Records: 707649
+Checksum: 565df8ed57d51
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00459.sum ../output/part-00459
+Records: 601101
+Checksum: 495320d2b25ab
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00460.sum ../output/part-00460
+Records: 696720
+Checksum: 5510367118fa2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00461.sum ../output/part-00461
+Records: 672790
+Checksum: 5223b59d408bc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00462.sum ../output/part-00462
+Records: 739322
+Checksum: 5a54cfc082878
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00463.sum ../output/part-00463
+Records: 637306
+Checksum: 4dd291ca210fc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00464.sum ../output/part-00464
+Records: 748210
+Checksum: 5b63f893aefc9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00465.sum ../output/part-00465
+Records: 705500
+Checksum: 561761eccad86
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00466.sum ../output/part-00466
+Records: 583381
+Checksum: 471942a7076cb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00467.sum ../output/part-00467
+Records: 606043
+Checksum: 4a0d76a331ed6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00468.sum ../output/part-00468
+Records: 768348
+Checksum: 5dde28ca93299
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00469.sum ../output/part-00469
+Records: 773011
+Checksum: 5e5bb041c518d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00470.sum ../output/part-00470
+Records: 516766
+Checksum: 3f1724e199d8e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00471.sum ../output/part-00471
+Records: 818416
+Checksum: 63f6ab9edddfe
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00472.sum ../output/part-00472
+Records: 546603
+Checksum: 42bd07065f41a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00473.sum ../output/part-00473
+Records: 664391
+Checksum: 51295212a4c70
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00474.sum ../output/part-00474
+Records: 658430
+Checksum: 5056a6104d00b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00475.sum ../output/part-00475
+Records: 619694
+Checksum: 4ba7b4b79368e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00476.sum ../output/part-00476
+Records: 675006
+Checksum: 526b27f3161bd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00477.sum ../output/part-00477
+Records: 587424
+Checksum: 47b9a0b50f832
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00478.sum ../output/part-00478
+Records: 697127
+Checksum: 54f29f602491a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00479.sum ../output/part-00479
+Records: 661507
+Checksum: 50bbfece28b88
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00480.sum ../output/part-00480
+Records: 810928
+Checksum: 63141d2128072
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00481.sum ../output/part-00481
+Records: 767018
+Checksum: 5da9e8f9ffa93
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00482.sum ../output/part-00482
+Records: 691560
+Checksum: 5485c1ad34fca
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00483.sum ../output/part-00483
+Records: 720158
+Checksum: 57ccf5d01f136
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00484.sum ../output/part-00484
+Records: 684659
+Checksum: 537527a4f5f93
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00485.sum ../output/part-00485
+Records: 676500
+Checksum: 5278daaa50b85
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00486.sum ../output/part-00486
+Records: 623153
+Checksum: 4c19cdc8d9235
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00487.sum ../output/part-00487
+Records: 672335
+Checksum: 5217cea22dc3a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00488.sum ../output/part-00488
+Records: 694195
+Checksum: 54c64a3e0f633
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00489.sum ../output/part-00489
+Records: 859002
+Checksum: 68d1d9a22709b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00490.sum ../output/part-00490
+Records: 791707
+Checksum: 609ce7d1becb9
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00491.sum ../output/part-00491
+Records: 683631
+Checksum: 538315be351b5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00492.sum ../output/part-00492
+Records: 632789
+Checksum: 4d2a61a17cf86
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00493.sum ../output/part-00493
+Records: 653529
+Checksum: 4fbc1b1e3c4d8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00494.sum ../output/part-00494
+Records: 704527
+Checksum: 56127c4f37fea
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00495.sum ../output/part-00495
+Records: 557855
+Checksum: 4416aa57af21f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00496.sum ../output/part-00496
+Records: 588457
+Checksum: 47c4517747ca0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00497.sum ../output/part-00497
+Records: 712415
+Checksum: 56ed4f5b7c182
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00498.sum ../output/part-00498
+Records: 526200
+Checksum: 4034b18f4191e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00499.sum ../output/part-00499
+Records: 589514
+Checksum: 47e9668bd45fe
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00500.sum ../output/part-00500
+Records: 624452
+Checksum: 4c2d4e3d759ef
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00501.sum ../output/part-00501
+Records: 601239
+Checksum: 4982ef913bec3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00502.sum ../output/part-00502
+Records: 623096
+Checksum: 4c0df254052de
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00503.sum ../output/part-00503
+Records: 602074
+Checksum: 497a1d7743922
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00504.sum ../output/part-00504
+Records: 784034
+Checksum: 5f93845cf8832
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00505.sum ../output/part-00505
+Records: 831657
+Checksum: 65804641a858d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00506.sum ../output/part-00506
+Records: 715929
+Checksum: 575c221208163
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00507.sum ../output/part-00507
+Records: 606882
+Checksum: 4a1a721b6e28a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00508.sum ../output/part-00508
+Records: 703910
+Checksum: 55e1a3b9d3121
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00509.sum ../output/part-00509
+Records: 686428
+Checksum: 53dce35775e23
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00510.sum ../output/part-00510
+Records: 760574
+Checksum: 5cc6db5adac61
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00511.sum ../output/part-00511
+Records: 579946
+Checksum: 46c5c5063125a
+Duplicate keys: 0
+SUCCESS - all records are in order
+cat part-00000.sum part-00001.sum part-00002.sum part-00003.sum part-00004.sum part-00005.sum part-00006.sum part-00007.sum part-00008.sum part-00009.sum part-00010.sum part-00011.sum part-00012.sum part-00013.sum part-00014.sum part-00015.sum part-00016.sum part-00017.sum part-00018.sum part-00019.sum part-00020.sum part-00021.sum part-00022.sum part-00023.sum part-00024.sum part-00025.sum part-00026.sum part-00027.sum part-00028.sum part-00029.sum part-00030.sum part-00031.sum part-00032.sum part-00033.sum part-00034.sum part-00035.sum part-00036.sum part-00037.sum part-00038.sum part-00039.sum part-00040.sum part-00041.sum part-00042.sum part-00043.sum part-00044.sum part-00045.sum part-00046.sum part-00047.sum part-00048.sum part-00049.sum part-00050.sum part-00051.sum part-00052.sum part-00053.sum part-00054.sum part-00055.sum part-00056.sum part-00057.sum part-00058.sum part-00059.sum part-00060.sum part-00061.sum part-00062.sum part-00063.sum part-00064.sum part-00065.sum part-00066.sum part-00067.sum part-00068.sum part-00069.sum part-00070.sum part-00071.sum part-00072.sum part-00073.sum part-00074.sum part-00075.sum part-00076.sum part-00077.sum part-00078.sum part-00079.sum part-00080.sum part-00081.sum part-00082.sum part-00083.sum part-00084.sum part-00085.sum part-00086.sum part-00087.sum part-00088.sum part-00089.sum part-00090.sum part-00091.sum part-00092.sum part-00093.sum part-00094.sum part-00095.sum part-00096.sum part-00097.sum part-00098.sum part-00099.sum part-00100.sum part-00101.sum part-00102.sum part-00103.sum part-00104.sum part-00105.sum part-00106.sum part-00107.sum part-00108.sum part-00109.sum part-00110.sum part-00111.sum part-00112.sum part-00113.sum part-00114.sum part-00115.sum part-00116.sum part-00117.sum part-00118.sum part-00119.sum part-00120.sum part-00121.sum part-00122.sum part-00123.sum part-00124.sum part-00125.sum part-00126.sum part-00127.sum part-00128.sum part-00129.sum part-00130.sum part-00131.sum part-00132.sum part-00133.sum part-00134.sum part-00135.sum part-00136.sum part-00137.sum part-00138.sum part-00139.sum part-00140.sum part-00141.sum part-00142.sum part-00143.sum part-00144.sum part-00145.sum part-00146.sum part-00147.sum part-00148.sum part-00149.sum part-00150.sum part-00151.sum part-00152.sum part-00153.sum part-00154.sum part-00155.sum part-00156.sum part-00157.sum part-00158.sum part-00159.sum part-00160.sum part-00161.sum part-00162.sum part-00163.sum part-00164.sum part-00165.sum part-00166.sum part-00167.sum part-00168.sum part-00169.sum part-00170.sum part-00171.sum part-00172.sum part-00173.sum part-00174.sum part-00175.sum part-00176.sum part-00177.sum part-00178.sum part-00179.sum part-00180.sum part-00181.sum part-00182.sum part-00183.sum part-00184.sum part-00185.sum part-00186.sum part-00187.sum part-00188.sum part-00189.sum part-00190.sum part-00191.sum part-00192.sum part-00193.sum part-00194.sum part-00195.sum part-00196.sum part-00197.sum part-00198.sum part-00199.sum part-00200.sum part-00201.sum part-00202.sum part-00203.sum part-00204.sum part-00205.sum part-00206.sum part-00207.sum part-00208.sum part-00209.sum part-00210.sum part-00211.sum part-00212.sum part-00213.sum part-00214.sum part-00215.sum part-00216.sum part-00217.sum part-00218.sum part-00219.sum part-00220.sum part-00221.sum part-00222.sum part-00223.sum part-00224.sum part-00225.sum part-00226.sum part-00227.sum part-00228.sum part-00229.sum part-00230.sum part-00231.sum part-00232.sum part-00233.sum part-00234.sum part-00235.sum part-00236.sum part-00237.sum part-00238.sum part-00239.sum part-00240.sum part-00241.sum part-00242.sum part-00243.sum part-00244.sum part-00245.sum part-00246.sum part-00247.sum part-00248.sum part-00249.sum part-00250.sum part-00251.sum part-00252.sum part-00253.sum part-00254.sum part-00255.sum part-00256.sum part-00257.sum part-00258.sum part-00259.sum part-00260.sum part-00261.sum part-00262.sum part-00263.sum part-00264.sum part-00265.sum part-00266.sum part-00267.sum part-00268.sum part-00269.sum part-00270.sum part-00271.sum part-00272.sum part-00273.sum part-00274.sum part-00275.sum part-00276.sum part-00277.sum part-00278.sum part-00279.sum part-00280.sum part-00281.sum part-00282.sum part-00283.sum part-00284.sum part-00285.sum part-00286.sum part-00287.sum part-00288.sum part-00289.sum part-00290.sum part-00291.sum part-00292.sum part-00293.sum part-00294.sum part-00295.sum part-00296.sum part-00297.sum part-00298.sum part-00299.sum part-00300.sum part-00301.sum part-00302.sum part-00303.sum part-00304.sum part-00305.sum part-00306.sum part-00307.sum part-00308.sum part-00309.sum part-00310.sum part-00311.sum part-00312.sum part-00313.sum part-00314.sum part-00315.sum part-00316.sum part-00317.sum part-00318.sum part-00319.sum part-00320.sum part-00321.sum part-00322.sum part-00323.sum part-00324.sum part-00325.sum part-00326.sum part-00327.sum part-00328.sum part-00329.sum part-00330.sum part-00331.sum part-00332.sum part-00333.sum part-00334.sum part-00335.sum part-00336.sum part-00337.sum part-00338.sum part-00339.sum part-00340.sum part-00341.sum part-00342.sum part-00343.sum part-00344.sum part-00345.sum part-00346.sum part-00347.sum part-00348.sum part-00349.sum part-00350.sum part-00351.sum part-00352.sum part-00353.sum part-00354.sum part-00355.sum part-00356.sum part-00357.sum part-00358.sum part-00359.sum part-00360.sum part-00361.sum part-00362.sum part-00363.sum part-00364.sum part-00365.sum part-00366.sum part-00367.sum part-00368.sum part-00369.sum part-00370.sum part-00371.sum part-00372.sum part-00373.sum part-00374.sum part-00375.sum part-00376.sum part-00377.sum part-00378.sum part-00379.sum part-00380.sum part-00381.sum part-00382.sum part-00383.sum part-00384.sum part-00385.sum part-00386.sum part-00387.sum part-00388.sum part-00389.sum part-00390.sum part-00391.sum part-00392.sum part-00393.sum part-00394.sum part-00395.sum part-00396.sum part-00397.sum part-00398.sum part-00399.sum part-00400.sum part-00401.sum part-00402.sum part-00403.sum part-00404.sum part-00405.sum part-00406.sum part-00407.sum part-00408.sum part-00409.sum part-00410.sum part-00411.sum part-00412.sum part-00413.sum part-00414.sum part-00415.sum part-00416.sum part-00417.sum part-00418.sum part-00419.sum part-00420.sum part-00421.sum part-00422.sum part-00423.sum part-00424.sum part-00425.sum part-00426.sum part-00427.sum part-00428.sum part-00429.sum part-00430.sum part-00431.sum part-00432.sum part-00433.sum part-00434.sum part-00435.sum part-00436.sum part-00437.sum part-00438.sum part-00439.sum part-00440.sum part-00441.sum part-00442.sum part-00443.sum part-00444.sum part-00445.sum part-00446.sum part-00447.sum part-00448.sum part-00449.sum part-00450.sum part-00451.sum part-00452.sum part-00453.sum part-00454.sum part-00455.sum part-00456.sum part-00457.sum part-00458.sum part-00459.sum part-00460.sum part-00461.sum part-00462.sum part-00463.sum part-00464.sum part-00465.sum part-00466.sum part-00467.sum part-00468.sum part-00469.sum part-00470.sum part-00471.sum part-00472.sum part-00473.sum part-00474.sum part-00475.sum part-00476.sum part-00477.sum part-00478.sum part-00479.sum part-00480.sum part-00481.sum part-00482.sum part-00483.sum part-00484.sum part-00485.sum part-00486.sum part-00487.sum part-00488.sum part-00489.sum part-00490.sum part-00491.sum part-00492.sum part-00493.sum part-00494.sum part-00495.sum part-00496.sum part-00497.sum part-00498.sum part-00499.sum part-00500.sum part-00501.sum part-00502.sum part-00503.sum part-00504.sum part-00505.sum part-00506.sum part-00507.sum part-00508.sum part-00509.sum part-00510.sum part-00511.sum 
+./valsort -s all.sum
+Records: 343597384
+Checksum: a3d691b0bacfba4
+Duplicate keys: 0
+SUCCESS - all records are in order

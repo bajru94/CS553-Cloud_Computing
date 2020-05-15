@@ -1,0 +1,145 @@
+ubuntu@demo-namenode:/exports/projects/hadoop-3.2.1$ bin/hadoop jar HadoopSort.jar HadoopSort /home/input/ /home/output
+2020-05-02 21:45:28,712 INFO input.FileInputFormat: Total input files to process : 1
+2020-05-02 21:45:28,761 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:29,168 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:29,384 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:29,564 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:29,740 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:29,917 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:30,249 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:30,407 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:30,605 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:30,762 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:30,939 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:31,104 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:31,290 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:31,466 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:31,643 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:31,811 INFO partition.InputSampler: Using 10000 samples
+2020-05-02 21:45:31,876 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+2020-05-02 21:45:31,876 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+2020-05-02 21:45:31,923 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:32,034 INFO client.RMProxy: Connecting to ResourceManager at /192.168.122.145:8032
+2020-05-02 21:45:32,260 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2020-05-02 21:45:32,274 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/ubuntu/.staging/job_1588452626345_0004
+2020-05-02 21:45:32,327 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:32,376 INFO input.FileInputFormat: Total input files to process : 1
+2020-05-02 21:45:32,399 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:32,425 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:32,436 INFO mapreduce.JobSubmitter: number of splits:16
+2020-05-02 21:45:32,568 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2020-05-02 21:45:32,586 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1588452626345_0004
+2020-05-02 21:45:32,586 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2020-05-02 21:45:32,733 INFO conf.Configuration: resource-types.xml not found
+2020-05-02 21:45:32,733 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2020-05-02 21:45:32,782 INFO impl.YarnClientImpl: Submitted application application_1588452626345_0004
+2020-05-02 21:45:32,808 INFO mapreduce.Job: The url to track the job: http://demo-namenode.local:8088/proxy/application_1588452626345_0004/
+2020-05-02 21:45:32,809 INFO mapreduce.Job: Running job: job_1588452626345_0004
+2020-05-02 21:45:38,911 INFO mapreduce.Job: Job job_1588452626345_0004 running in uber mode : false
+2020-05-02 21:45:38,913 INFO mapreduce.Job:  map 0% reduce 0%
+2020-05-02 21:45:50,092 INFO mapreduce.Job:  map 19% reduce 0%
+2020-05-02 21:45:51,101 INFO mapreduce.Job:  map 38% reduce 0%
+2020-05-02 21:46:00,182 INFO mapreduce.Job:  map 63% reduce 0%
+2020-05-02 21:46:01,190 INFO mapreduce.Job:  map 75% reduce 0%
+2020-05-02 21:46:07,232 INFO mapreduce.Job:  map 81% reduce 0%
+2020-05-02 21:46:08,239 INFO mapreduce.Job:  map 88% reduce 0%
+2020-05-02 21:46:09,251 INFO mapreduce.Job:  map 94% reduce 0%
+2020-05-02 21:46:12,278 INFO mapreduce.Job:  map 100% reduce 0%
+2020-05-02 21:46:14,293 INFO mapreduce.Job:  map 100% reduce 12%
+2020-05-02 21:46:16,311 INFO mapreduce.Job:  map 100% reduce 30%
+2020-05-02 21:46:17,322 INFO mapreduce.Job:  map 100% reduce 54%
+2020-05-02 21:46:19,344 INFO mapreduce.Job:  map 100% reduce 55%
+2020-05-02 21:46:20,350 INFO mapreduce.Job:  map 100% reduce 97%
+2020-05-02 21:46:21,359 INFO mapreduce.Job:  map 100% reduce 100%
+2020-05-02 21:46:23,389 INFO mapreduce.Job: Job job_1588452626345_0004 completed successfully
+2020-05-02 21:46:23,503 INFO mapreduce.Job: Counters: 55
+	File System Counters
+		FILE: Number of bytes read=1095216660
+		FILE: Number of bytes written=2194960718
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1075717240
+		HDFS: Number of bytes written=1073741800
+		HDFS: Number of read operations=100
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=8
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=1
+		Launched map tasks=16
+		Launched reduce tasks=4
+		Data-local map tasks=16
+		Total time spent by all maps in occupied slots (ms)=128604
+		Total time spent by all reduces in occupied slots (ms)=67206
+		Total time spent by all map tasks (ms)=128604
+		Total time spent by all reduce tasks (ms)=67206
+		Total vcore-milliseconds taken by all map tasks=128604
+		Total vcore-milliseconds taken by all reduce tasks=67206
+		Total megabyte-milliseconds taken by all map tasks=131690496
+		Total megabyte-milliseconds taken by all reduce tasks=68818944
+	Map-Reduce Framework
+		Map input records=10737418
+		Map output records=10737418
+		Map output bytes=1073741800
+		Map output materialized bytes=1095217020
+		Input split bytes=1776
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=10737418
+		Reduce shuffle bytes=1095217020
+		Reduce input records=10737418
+		Reduce output records=10737418
+		Spilled Records=21474836
+		Shuffled Maps =64
+		Failed Shuffles=0
+		Merged Map outputs=64
+		GC time elapsed (ms)=5704
+		CPU time spent (ms)=78570
+		Physical memory (bytes) snapshot=10747682816
+		Virtual memory (bytes) snapshot=51933126656
+		Total committed heap usage (bytes)=9435086848
+		Peak Map Physical memory (bytes)=597356544
+		Peak Map Virtual memory (bytes)=2597183488
+		Peak Reduce Physical memory (bytes)=724279296
+		Peak Reduce Virtual memory (bytes)=2633048064
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1075707880
+	File Output Format Counters 
+		Bytes Written=1073741800
+Total time to sort data on hadoop: 55.543 seconds
+
+Valsort
+./valsort -o part-00000.sum ../output/part-r-00000
+Records: 2777379
+Checksum: 1531a349255a61
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00001.sum ../output/part-r-00001
+Records: 2622530
+Checksum: 1402607a970501
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00002.sum ../output/part-r-00002
+Records: 2661617
+Checksum: 144db20743cdc0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00003.sum ../output/part-r-00003
+Records: 2675892
+Checksum: 146d44dba5214a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -s all.sum
+Records: 10737418
+Checksum: 51eefaa6a54e6c
+Duplicate keys: 0
+SUCCESS - all records are in order
+

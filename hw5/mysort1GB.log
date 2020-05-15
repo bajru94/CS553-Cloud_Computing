@@ -1,0 +1,10 @@
+Complete data can be sorted in the memory and hence in-memory merge sort will be used
+Done, total time taken for sorting:24 Seconds
+Total Data Read: 1 GB
+Total Data Write: 1 GB
+
+Valsort Check
+Records: 10737418
+Checksum: 51e88faefe7b34
+Duplicate keys: 0
+SUCCESS - all records are in order

@@ -1,0 +1,2030 @@
+ubuntu@demo-namenode:/exports/projects/spark-3.0.0-preview2-bin-hadoop3.2$ time bin/spark-submit --class SparkSort --master yarn --deploy-mode cluster --driver-memory 4g --executor-memory 2g --executor-cores 4 --num-executors 4 SparkSort.jar /home/input/16GB.txt /home/output/
+2020-05-02 21:11:09,213 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-02 21:11:09,280 INFO client.RMProxy: Connecting to ResourceManager at /192.168.122.145:8032
+2020-05-02 21:11:09,659 INFO yarn.Client: Requesting a new application from cluster with 1 NodeManagers
+2020-05-02 21:11:09,762 INFO conf.Configuration: resource-types.xml not found
+2020-05-02 21:11:09,763 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2020-05-02 21:11:09,781 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (8192 MB per container)
+2020-05-02 21:11:09,782 INFO yarn.Client: Will allocate AM container, with 4505 MB memory including 409 MB overhead
+2020-05-02 21:11:09,782 INFO yarn.Client: Setting up container launch context for our AM
+2020-05-02 21:11:09,782 INFO yarn.Client: Setting up the launch environment for our AM container
+2020-05-02 21:11:09,792 INFO yarn.Client: Preparing resources for our AM container
+2020-05-02 21:11:10,187 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2020-05-02 21:11:12,023 INFO yarn.Client: Uploading resource file:/tmp/spark-4306e540-296b-4b51-9d5b-d28713e8e07f/__spark_libs__1098931842075864491.zip -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588452626345_0002/__spark_libs__1098931842075864491.zip
+2020-05-02 21:11:13,543 INFO yarn.Client: Uploading resource file:/exports/projects/spark-3.0.0-preview2-bin-hadoop3.2/SparkSort.jar -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588452626345_0002/SparkSort.jar
+2020-05-02 21:11:13,778 INFO yarn.Client: Uploading resource file:/tmp/spark-4306e540-296b-4b51-9d5b-d28713e8e07f/__spark_conf__3409073867865844139.zip -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588452626345_0002/__spark_conf__.zip
+2020-05-02 21:11:13,855 INFO spark.SecurityManager: Changing view acls to: ubuntu
+2020-05-02 21:11:13,855 INFO spark.SecurityManager: Changing modify acls to: ubuntu
+2020-05-02 21:11:13,855 INFO spark.SecurityManager: Changing view acls groups to: 
+2020-05-02 21:11:13,856 INFO spark.SecurityManager: Changing modify acls groups to: 
+2020-05-02 21:11:13,856 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ubuntu); groups with view permissions: Set(); users  with modify permissions: Set(ubuntu); groups with modify permissions: Set()
+2020-05-02 21:11:13,907 INFO yarn.Client: Submitting application application_1588452626345_0002 to ResourceManager
+2020-05-02 21:11:13,949 INFO impl.YarnClientImpl: Submitted application application_1588452626345_0002
+2020-05-02 21:11:14,955 INFO yarn.Client: Application report for application_1588452626345_0002 (state: ACCEPTED)
+2020-05-02 21:11:14,962 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1588453873923
+	 final status: UNDEFINED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588452626345_0002/
+	 user: ubuntu
+2020-05-02 21:11:15,965 INFO yarn.Client: Application report for application_1588452626345_0002 (state: ACCEPTED)
+2020-05-02 21:11:16,970 INFO yarn.Client: Application report for application_1588452626345_0002 (state: ACCEPTED)
+2020-05-02 21:11:17,974 INFO yarn.Client: Application report for application_1588452626345_0002 (state: ACCEPTED)
+2020-05-02 21:11:18,978 INFO yarn.Client: Application report for application_1588452626345_0002 (state: ACCEPTED)
+2020-05-02 21:11:19,983 INFO yarn.Client: Application report for application_1588452626345_0002 (state: ACCEPTED)
+2020-05-02 21:11:20,988 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:20,989 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: demo-datanode1.local
+	 ApplicationMaster RPC port: 41161
+	 queue: default
+	 start time: 1588453873923
+	 final status: UNDEFINED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588452626345_0002/
+	 user: ubuntu
+2020-05-02 21:11:21,993 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:22,997 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:24,002 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:25,006 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:26,010 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:27,013 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:28,017 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:29,024 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:30,028 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:31,031 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:32,034 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:33,037 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:34,041 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:35,045 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:36,049 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:37,053 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:38,057 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:39,060 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:40,064 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:41,067 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:42,071 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:43,074 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:44,077 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:45,081 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:46,084 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:47,088 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:48,091 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:49,095 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:50,099 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:51,103 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:52,107 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:53,112 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:54,116 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:55,120 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:56,124 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:57,129 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:58,134 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:11:59,138 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:00,142 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:01,146 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:02,151 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:03,155 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:04,158 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:05,162 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:06,166 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:07,169 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:08,173 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:09,177 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:10,181 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:11,184 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:12,189 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:13,193 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:14,197 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:15,201 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:16,205 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:17,210 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:18,213 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:19,217 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:20,220 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:21,225 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:22,229 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:23,237 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:24,241 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:25,245 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:26,249 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:27,252 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:28,256 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:29,260 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:30,263 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:31,267 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:32,272 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:33,276 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:34,279 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:35,283 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:36,286 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:37,290 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:38,293 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:39,298 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:40,301 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:41,305 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:42,310 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:43,314 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:44,317 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:45,321 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:46,325 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:47,328 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:48,332 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:49,335 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:50,338 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:51,342 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:52,345 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:53,349 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:54,352 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:55,356 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:56,360 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:57,363 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:58,367 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:12:59,371 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:00,374 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:01,379 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:02,382 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:03,386 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:04,391 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:05,394 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:06,398 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:07,402 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:08,406 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:09,409 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:10,412 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:11,415 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:12,419 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:13,422 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:14,426 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:15,429 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:16,433 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:17,436 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:18,439 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:19,442 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:20,446 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:21,450 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:22,457 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:23,460 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:24,464 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:25,467 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:26,471 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:27,475 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:28,478 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:29,482 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:30,485 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:31,488 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:32,492 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:33,496 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:34,499 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:35,503 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:36,506 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:37,510 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:38,513 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:39,516 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:40,519 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:41,522 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:42,525 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:43,529 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:44,533 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:45,536 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:46,539 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:47,543 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:48,547 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:49,550 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:50,554 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:51,558 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:52,561 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:53,565 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:54,568 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:55,571 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:56,575 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:57,579 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:58,582 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:13:59,586 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:00,589 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:01,593 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:02,596 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:03,599 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:04,603 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:05,606 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:06,610 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:07,613 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:08,616 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:09,619 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:10,622 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:11,626 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:12,630 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:13,633 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:14,636 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:15,640 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:16,643 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:17,646 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:18,649 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:19,653 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:20,655 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:21,659 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:22,663 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:23,667 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:24,671 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:25,674 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:26,678 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:27,681 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:28,686 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:29,689 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:30,693 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:31,696 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:32,699 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:33,702 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:34,706 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:35,709 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:36,713 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:37,717 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:38,720 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:39,723 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:40,727 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:41,730 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:42,734 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:43,737 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:44,740 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:45,744 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:46,748 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:47,750 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:48,754 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:49,756 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:50,760 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:51,763 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:52,766 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:53,769 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:54,773 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:55,776 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:56,779 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:57,783 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:58,786 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:14:59,789 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:00,792 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:01,796 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:02,799 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:03,802 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:04,805 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:05,809 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:06,812 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:07,816 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:08,819 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:09,823 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:10,827 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:11,831 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:12,834 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:13,838 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:14,841 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:15,844 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:16,847 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:17,850 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:18,854 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:19,858 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:20,861 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:21,864 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:22,867 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:23,870 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:24,873 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:25,877 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:26,880 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:27,884 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:28,888 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:29,895 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:30,898 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:31,900 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:32,904 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:33,907 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:34,910 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:35,913 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:36,916 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:37,919 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:38,923 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:39,926 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:40,929 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:41,932 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:42,935 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:43,938 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:44,942 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:45,945 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:46,948 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:47,951 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:48,954 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:49,957 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:50,960 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:51,963 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:52,967 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:53,970 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:54,973 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:55,976 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:56,980 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:57,983 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:58,986 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:15:59,989 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:00,992 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:01,995 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:02,997 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:04,000 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:05,003 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:06,006 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:07,009 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:08,012 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:09,015 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:10,018 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:11,021 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:12,024 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:13,026 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:14,029 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:15,032 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:16,035 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:17,038 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:18,042 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:19,045 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:20,048 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:21,051 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:22,054 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:23,057 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:24,060 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:25,063 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:26,066 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:27,069 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:28,072 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:29,076 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:30,079 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:31,082 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:32,085 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:33,088 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:34,091 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:35,094 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:36,098 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:37,101 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:38,104 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:39,107 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:40,110 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:41,113 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:42,116 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:43,119 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:44,122 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:45,125 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:46,128 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:47,131 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:48,134 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:49,137 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:50,140 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:51,143 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:52,145 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:53,148 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:54,151 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:55,154 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:56,157 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:57,160 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:58,163 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:16:59,166 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:00,170 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:01,173 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:02,176 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:03,179 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:04,182 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:05,185 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:06,188 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:07,191 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:08,194 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:09,197 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:10,200 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:11,202 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:12,205 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:13,208 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:14,211 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:15,213 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:16,216 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:17,219 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:18,222 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:19,226 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:20,229 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:21,233 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:22,235 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:23,238 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:24,241 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:25,243 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:26,245 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:27,247 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:28,250 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:29,252 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:30,255 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:31,258 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:32,260 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:33,263 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:34,266 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:35,269 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:36,272 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:37,274 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:38,277 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:39,280 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:40,283 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:41,286 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:42,288 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:43,291 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:44,294 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:45,296 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:46,299 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:47,302 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:48,304 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:49,307 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:50,310 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:51,313 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:52,315 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:53,318 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:54,321 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:55,324 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:56,327 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:57,330 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:58,333 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:17:59,336 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:00,338 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:01,340 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:02,343 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:03,346 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:04,348 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:05,351 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:06,354 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:07,356 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:08,359 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:09,362 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:10,364 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:11,366 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:12,369 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:13,371 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:14,374 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:15,376 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:16,379 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:17,381 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:18,383 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:19,387 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:20,390 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:21,392 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:22,395 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:23,397 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:24,400 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:25,402 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:26,405 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:27,407 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:28,409 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:29,412 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:30,414 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:31,416 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:32,419 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:33,421 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:34,423 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:35,426 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:36,429 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:37,431 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:38,434 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:39,436 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:40,439 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:41,442 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:42,444 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:43,447 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:44,450 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:45,452 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:46,454 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:47,457 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:48,459 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:49,462 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:50,464 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:51,467 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:52,470 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:53,472 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:54,475 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:55,478 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:56,480 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:57,483 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:58,485 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:18:59,487 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:00,490 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:01,492 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:02,495 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:03,497 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:04,499 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:05,502 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:06,504 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:07,506 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:08,509 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:09,511 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:10,513 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:11,519 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:12,523 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:13,525 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:14,527 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:15,530 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:16,532 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:17,535 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:18,537 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:19,540 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:20,542 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:21,544 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:22,547 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:23,550 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:24,552 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:25,555 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:26,557 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:27,560 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:28,581 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:29,584 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:30,586 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:31,589 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:32,592 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:33,595 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:34,598 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:35,601 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:36,603 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:37,606 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:38,608 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:39,611 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:40,613 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:41,615 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:42,618 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:43,621 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:44,624 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:45,626 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:46,629 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:47,632 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:48,635 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:49,637 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:50,640 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:51,642 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:52,644 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:53,647 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:54,650 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:55,652 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:56,655 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:57,657 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:58,659 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:19:59,662 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:00,665 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:01,667 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:02,669 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:03,672 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:04,674 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:05,677 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:06,679 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:07,681 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:08,684 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:09,687 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:10,689 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:11,691 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:12,694 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:13,696 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:14,699 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:15,701 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:16,704 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:17,706 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:18,708 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:19,710 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:20,713 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:21,715 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:22,717 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:23,720 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:24,722 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:25,725 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:26,727 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:27,730 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:28,732 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:29,735 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:30,737 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:31,740 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:32,742 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:33,745 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:34,748 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:35,750 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:36,753 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:37,756 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:38,758 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:39,761 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:40,763 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:41,766 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:42,768 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:43,771 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:44,773 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:45,776 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:46,778 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:47,781 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:48,783 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:49,785 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:50,788 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:51,790 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:52,792 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:53,795 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:54,797 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:55,799 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:56,801 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:57,804 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:58,806 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:20:59,808 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:00,811 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:01,813 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:02,815 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:03,818 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:04,820 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:05,823 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:06,825 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:07,828 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:08,830 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:09,833 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:10,835 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:11,840 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:12,842 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:13,845 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:14,847 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:15,850 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:16,853 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:17,855 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:18,857 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:19,860 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:20,862 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:21,865 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:22,867 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:23,869 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:24,872 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:25,874 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:26,876 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:27,879 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:28,881 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:29,883 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:30,885 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:31,888 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:32,890 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:33,893 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:34,895 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:35,897 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:36,914 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:37,917 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:38,920 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:39,922 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:40,924 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:41,927 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:42,929 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:43,931 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:44,933 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:45,935 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:46,938 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:47,940 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:48,943 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:49,945 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:50,947 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:51,950 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:52,952 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:53,955 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:54,957 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:55,960 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:56,962 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:57,964 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:58,967 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:21:59,969 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:00,971 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:01,973 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:02,976 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:03,978 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:04,980 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:05,983 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:06,985 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:07,988 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:08,991 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:09,993 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:10,995 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:11,998 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:13,000 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:14,002 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:15,005 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:16,007 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:17,010 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:18,013 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:19,015 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:20,017 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:21,019 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:22,022 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:23,024 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:24,027 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:25,029 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:26,032 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:27,035 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:28,038 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:29,041 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:30,044 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:31,047 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:32,049 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:33,051 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:34,055 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:35,057 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:36,060 INFO yarn.Client: Application report for application_1588452626345_0002 (state: RUNNING)
+2020-05-02 21:22:37,062 INFO yarn.Client: Application report for application_1588452626345_0002 (state: FINISHED)
+2020-05-02 21:22:37,064 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: demo-datanode1.local
+	 ApplicationMaster RPC port: 41161
+	 queue: default
+	 start time: 1588453873923
+	 final status: SUCCEEDED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588452626345_0002/
+	 user: ubuntu
+2020-05-02 21:22:37,093 INFO util.ShutdownHookManager: Shutdown hook called
+2020-05-02 21:22:37,094 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-4306e540-296b-4b51-9d5b-d28713e8e07f
+2020-05-02 21:22:37,102 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-fa84501d-07e7-491b-9aa8-c884283847a9
+
+real	11m29.578s
+user	0m14.602s
+sys	0m3.040s
+
+Valsort
+./valsort -o part-00000.sum ../output/part-00000
+Records: 673496
+Checksum: 522e716eef75b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00001.sum ../output/part-00001
+Records: 726282
+Checksum: 589cf7af955dd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00002.sum ../output/part-00002
+Records: 800414
+Checksum: 61b508bf71eaa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00003.sum ../output/part-00003
+Records: 737329
+Checksum: 59e70a191ef23
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00004.sum ../output/part-00004
+Records: 577759
+Checksum: 469366469eb66
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00005.sum ../output/part-00005
+Records: 631780
+Checksum: 4d2ea973fd8ed
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00006.sum ../output/part-00006
+Records: 842134
+Checksum: 66c8f2a1d7dbb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00007.sum ../output/part-00007
+Records: 552325
+Checksum: 4359876c51b1b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00008.sum ../output/part-00008
+Records: 721302
+Checksum: 580ee09da779e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00009.sum ../output/part-00009
+Records: 585654
+Checksum: 477550de7f7bd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00010.sum ../output/part-00010
+Records: 496652
+Checksum: 3c9d1eae9215c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00011.sum ../output/part-00011
+Records: 676429
+Checksum: 529f918319a49
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00012.sum ../output/part-00012
+Records: 606480
+Checksum: 49fdbc4fdc84f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00013.sum ../output/part-00013
+Records: 632003
+Checksum: 4d2d19b600816
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00014.sum ../output/part-00014
+Records: 846584
+Checksum: 6758819fd46af
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00015.sum ../output/part-00015
+Records: 746738
+Checksum: 5b2b8052c8ef1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00016.sum ../output/part-00016
+Records: 751559
+Checksum: 5ba4df06c997b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00017.sum ../output/part-00017
+Records: 636720
+Checksum: 4db5774c08d3a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00018.sum ../output/part-00018
+Records: 595524
+Checksum: 48bcd14c91b6a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00019.sum ../output/part-00019
+Records: 719402
+Checksum: 57c83661b0108
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00020.sum ../output/part-00020
+Records: 635376
+Checksum: 4d8dbc155ca51
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00021.sum ../output/part-00021
+Records: 608145
+Checksum: 4a3f326b85f52
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00022.sum ../output/part-00022
+Records: 698153
+Checksum: 5542746427144
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00023.sum ../output/part-00023
+Records: 822538
+Checksum: 646ef5390d280
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00024.sum ../output/part-00024
+Records: 626421
+Checksum: 4c774f4cef638
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00025.sum ../output/part-00025
+Records: 682689
+Checksum: 53481dba846db
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00026.sum ../output/part-00026
+Records: 711101
+Checksum: 56c0507825f22
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00027.sum ../output/part-00027
+Records: 532222
+Checksum: 40f60d9904697
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00028.sum ../output/part-00028
+Records: 761528
+Checksum: 5d075dffcddb3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00029.sum ../output/part-00029
+Records: 541190
+Checksum: 4204370a02f82
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00030.sum ../output/part-00030
+Records: 574462
+Checksum: 461748e1ce5bf
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00031.sum ../output/part-00031
+Records: 768217
+Checksum: 5dbed711a8bf5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00032.sum ../output/part-00032
+Records: 726569
+Checksum: 58cea09ff5afd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00033.sum ../output/part-00033
+Records: 710925
+Checksum: 56ba2237b9cf4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00034.sum ../output/part-00034
+Records: 539929
+Checksum: 41fa65679a3e7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00035.sum ../output/part-00035
+Records: 803561
+Checksum: 62237f3f604b8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00036.sum ../output/part-00036
+Records: 528044
+Checksum: 405efcf692595
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00037.sum ../output/part-00037
+Records: 683749
+Checksum: 537ce759d8b8e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00038.sum ../output/part-00038
+Records: 617810
+Checksum: 4b46c3ebbe371
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00039.sum ../output/part-00039
+Records: 658120
+Checksum: 50589eea4bc2e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00040.sum ../output/part-00040
+Records: 743780
+Checksum: 5ad4c045479fd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00041.sum ../output/part-00041
+Records: 747029
+Checksum: 5b2a903e092f2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00042.sum ../output/part-00042
+Records: 589005
+Checksum: 47ddf7d686581
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00043.sum ../output/part-00043
+Records: 625915
+Checksum: 4c749ebb780fe
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00044.sum ../output/part-00044
+Records: 629701
+Checksum: 4cdf322a656fd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00045.sum ../output/part-00045
+Records: 623601
+Checksum: 4c2af088e216e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00046.sum ../output/part-00046
+Records: 644582
+Checksum: 4ea835a0b47b2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00047.sum ../output/part-00047
+Records: 765195
+Checksum: 5d616ea5ea525
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00048.sum ../output/part-00048
+Records: 734242
+Checksum: 59ab4f69bdea4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00049.sum ../output/part-00049
+Records: 800038
+Checksum: 61b65a96e4b9b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00050.sum ../output/part-00050
+Records: 526702
+Checksum: 404ddf0d8e09f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00051.sum ../output/part-00051
+Records: 499325
+Checksum: 3cf9e20204df6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00052.sum ../output/part-00052
+Records: 587932
+Checksum: 47c0d9a132cf8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00053.sum ../output/part-00053
+Records: 566051
+Checksum: 45254c47896e1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00054.sum ../output/part-00054
+Records: 838713
+Checksum: 6654cd0d32d78
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00055.sum ../output/part-00055
+Records: 633424
+Checksum: 4d53cea360039
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00056.sum ../output/part-00056
+Records: 711255
+Checksum: 56cd480a8eff3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00057.sum ../output/part-00057
+Records: 631819
+Checksum: 4d1446ced4529
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00058.sum ../output/part-00058
+Records: 652586
+Checksum: 4fc0d1e0b66cb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00059.sum ../output/part-00059
+Records: 737415
+Checksum: 59dfefb870597
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00060.sum ../output/part-00060
+Records: 727680
+Checksum: 58ccf72ececab
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00061.sum ../output/part-00061
+Records: 550872
+Checksum: 433e8532eb2ec
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00062.sum ../output/part-00062
+Records: 653844
+Checksum: 4fd02536bae4b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00063.sum ../output/part-00063
+Records: 709919
+Checksum: 56ae593b9f26c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00064.sum ../output/part-00064
+Records: 695361
+Checksum: 54e072ae1da10
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00065.sum ../output/part-00065
+Records: 768238
+Checksum: 5dc9100ce1890
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00066.sum ../output/part-00066
+Records: 730163
+Checksum: 594923262d811
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00067.sum ../output/part-00067
+Records: 598809
+Checksum: 49166120a19f6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00068.sum ../output/part-00068
+Records: 843228
+Checksum: 66efe837d6cec
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00069.sum ../output/part-00069
+Records: 783911
+Checksum: 5fc2b914694f7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00070.sum ../output/part-00070
+Records: 539431
+Checksum: 41dc68709d7d1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00071.sum ../output/part-00071
+Records: 667238
+Checksum: 5164870e3478f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00072.sum ../output/part-00072
+Records: 777801
+Checksum: 5ee391a497b20
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00073.sum ../output/part-00073
+Records: 560169
+Checksum: 443c5b9df9886
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00074.sum ../output/part-00074
+Records: 694040
+Checksum: 54d121f11c072
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00075.sum ../output/part-00075
+Records: 496760
+Checksum: 3ca0e39fd9df0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00076.sum ../output/part-00076
+Records: 679900
+Checksum: 52e6e6d71a750
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00077.sum ../output/part-00077
+Records: 671345
+Checksum: 51ea119fb6bac
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00078.sum ../output/part-00078
+Records: 609245
+Checksum: 4a5bfdd2576bd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00079.sum ../output/part-00079
+Records: 642847
+Checksum: 4e77ca8b7bed2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00080.sum ../output/part-00080
+Records: 739245
+Checksum: 5a3ec842bed7b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00081.sum ../output/part-00081
+Records: 500667
+Checksum: 3d282cb88958b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00082.sum ../output/part-00082
+Records: 597461
+Checksum: 48de37426df83
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00083.sum ../output/part-00083
+Records: 794335
+Checksum: 60f55f9f6a489
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00084.sum ../output/part-00084
+Records: 729499
+Checksum: 58e93dceac0ab
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00085.sum ../output/part-00085
+Records: 815052
+Checksum: 638c311381c3a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00086.sum ../output/part-00086
+Records: 815093
+Checksum: 636a9c6a4920d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00087.sum ../output/part-00087
+Records: 573209
+Checksum: 45fa3f92935b4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00088.sum ../output/part-00088
+Records: 542746
+Checksum: 4248046edc9fd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00089.sum ../output/part-00089
+Records: 713320
+Checksum: 5712edfe1437e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00090.sum ../output/part-00090
+Records: 672283
+Checksum: 521cfbe9e9ada
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00091.sum ../output/part-00091
+Records: 489882
+Checksum: 3bc94f9843da3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00092.sum ../output/part-00092
+Records: 753157
+Checksum: 5c013cd5d703c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00093.sum ../output/part-00093
+Records: 713350
+Checksum: 571a826cb94b2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00094.sum ../output/part-00094
+Records: 799726
+Checksum: 61a2fd05baeb3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00095.sum ../output/part-00095
+Records: 689507
+Checksum: 5435b096c6cd5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00096.sum ../output/part-00096
+Records: 745341
+Checksum: 5b121a3dfaffa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00097.sum ../output/part-00097
+Records: 737619
+Checksum: 59ee9226879f5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00098.sum ../output/part-00098
+Records: 550635
+Checksum: 4337421864908
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00099.sum ../output/part-00099
+Records: 465972
+Checksum: 38c7b31e26b14
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00100.sum ../output/part-00100
+Records: 608371
+Checksum: 4a2884ac2e58e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00101.sum ../output/part-00101
+Records: 593403
+Checksum: 4869b5ebdd967
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00102.sum ../output/part-00102
+Records: 687728
+Checksum: 53ed390a55b3d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00103.sum ../output/part-00103
+Records: 833490
+Checksum: 65d024f659931
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00104.sum ../output/part-00104
+Records: 649638
+Checksum: 4f58d7addbd5a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00105.sum ../output/part-00105
+Records: 761455
+Checksum: 5cf26f22cae64
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00106.sum ../output/part-00106
+Records: 641923
+Checksum: 4e5221a14dcfd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00107.sum ../output/part-00107
+Records: 557485
+Checksum: 44159219ad587
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00108.sum ../output/part-00108
+Records: 610348
+Checksum: 4a7c406a95f16
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00109.sum ../output/part-00109
+Records: 619863
+Checksum: 4ba090d4a710d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00110.sum ../output/part-00110
+Records: 778996
+Checksum: 5f2211d4d2a4d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00111.sum ../output/part-00111
+Records: 617631
+Checksum: 4b5be9c9fdba1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00112.sum ../output/part-00112
+Records: 646943
+Checksum: 4ef9553c81a07
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00113.sum ../output/part-00113
+Records: 591425
+Checksum: 48222a78898e2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00114.sum ../output/part-00114
+Records: 676661
+Checksum: 5299f8ac251ab
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00115.sum ../output/part-00115
+Records: 585916
+Checksum: 4766ba90444f8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00116.sum ../output/part-00116
+Records: 446021
+Checksum: 3676128e4f7f7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00117.sum ../output/part-00117
+Records: 618412
+Checksum: 4b734d135b471
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00118.sum ../output/part-00118
+Records: 849221
+Checksum: 67abd25d6cd55
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00119.sum ../output/part-00119
+Records: 538277
+Checksum: 41bcab27e4b69
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00120.sum ../output/part-00120
+Records: 825439
+Checksum: 64d1a77313b2f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00121.sum ../output/part-00121
+Records: 686660
+Checksum: 53dc6ae0d3a5c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00122.sum ../output/part-00122
+Records: 944493
+Checksum: 735f15825dc13
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00123.sum ../output/part-00123
+Records: 699086
+Checksum: 5550ab184526a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00124.sum ../output/part-00124
+Records: 598495
+Checksum: 492213cf6c882
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00125.sum ../output/part-00125
+Records: 718570
+Checksum: 57b14d8fe9a8e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00126.sum ../output/part-00126
+Records: 767565
+Checksum: 5db08cb27e168
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00127.sum ../output/part-00127
+Records: 560207
+Checksum: 4459032656e15
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00128.sum ../output/part-00128
+Records: 753239
+Checksum: 5c05701e3d0e4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00129.sum ../output/part-00129
+Records: 720225
+Checksum: 57e22f85a2075
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00130.sum ../output/part-00130
+Records: 644067
+Checksum: 4e9a25df0701e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00131.sum ../output/part-00131
+Records: 613409
+Checksum: 4ae455c62aa5f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00132.sum ../output/part-00132
+Records: 715388
+Checksum: 5759b0d1a59de
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00133.sum ../output/part-00133
+Records: 751539
+Checksum: 5bd6aaaa7c1d5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00134.sum ../output/part-00134
+Records: 791946
+Checksum: 60a888a4b1e63
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00135.sum ../output/part-00135
+Records: 693929
+Checksum: 54a1d690d12ec
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00136.sum ../output/part-00136
+Records: 601029
+Checksum: 494f3249750e1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00137.sum ../output/part-00137
+Records: 679537
+Checksum: 530111681ed96
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00138.sum ../output/part-00138
+Records: 592770
+Checksum: 484ebaa0bb705
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00139.sum ../output/part-00139
+Records: 740508
+Checksum: 5a63589fff9f3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00140.sum ../output/part-00140
+Records: 662264
+Checksum: 50db5c24e8781
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00141.sum ../output/part-00141
+Records: 618725
+Checksum: 4b72b83483527
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00142.sum ../output/part-00142
+Records: 620881
+Checksum: 4bc2b7f651088
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00143.sum ../output/part-00143
+Records: 701397
+Checksum: 55ac01f436224
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00144.sum ../output/part-00144
+Records: 719164
+Checksum: 57cef1314d413
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00145.sum ../output/part-00145
+Records: 702338
+Checksum: 55bcd855f4d4b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00146.sum ../output/part-00146
+Records: 543939
+Checksum: 425b4f437014b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00147.sum ../output/part-00147
+Records: 605954
+Checksum: 49fc62965dea6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00148.sum ../output/part-00148
+Records: 595206
+Checksum: 4889d7746e0e3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00149.sum ../output/part-00149
+Records: 748443
+Checksum: 5b710a2d5427f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00150.sum ../output/part-00150
+Records: 677660
+Checksum: 52c52636452de
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00151.sum ../output/part-00151
+Records: 506482
+Checksum: 3dd28885ca1fc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00152.sum ../output/part-00152
+Records: 557442
+Checksum: 44112f2871da0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00153.sum ../output/part-00153
+Records: 601504
+Checksum: 49490769d156b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00154.sum ../output/part-00154
+Records: 669866
+Checksum: 51acea72415d8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00155.sum ../output/part-00155
+Records: 554805
+Checksum: 43c4ce31a5d14
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00156.sum ../output/part-00156
+Records: 637007
+Checksum: 4dba346b2d22c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00157.sum ../output/part-00157
+Records: 644973
+Checksum: 4ebf95a822652
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00158.sum ../output/part-00158
+Records: 671926
+Checksum: 51f6d0b26849d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00159.sum ../output/part-00159
+Records: 819176
+Checksum: 6408315ca0a74
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00160.sum ../output/part-00160
+Records: 644287
+Checksum: 4e9f42159fba6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00161.sum ../output/part-00161
+Records: 769629
+Checksum: 5e102b6e4fea0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00162.sum ../output/part-00162
+Records: 606012
+Checksum: 49f8be6b2376f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00163.sum ../output/part-00163
+Records: 601083
+Checksum: 4971294ef5555
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00164.sum ../output/part-00164
+Records: 633672
+Checksum: 4d77aaa590be2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00165.sum ../output/part-00165
+Records: 847670
+Checksum: 677de6f23b092
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00166.sum ../output/part-00166
+Records: 637141
+Checksum: 4db8ca90f68cd
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00167.sum ../output/part-00167
+Records: 526096
+Checksum: 4035b857ae9bc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00168.sum ../output/part-00168
+Records: 650376
+Checksum: 4f6b2ddedd4f7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00169.sum ../output/part-00169
+Records: 694069
+Checksum: 54c03bd602746
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00170.sum ../output/part-00170
+Records: 593037
+Checksum: 4852d6eb76395
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00171.sum ../output/part-00171
+Records: 608454
+Checksum: 4a45a08609785
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00172.sum ../output/part-00172
+Records: 731081
+Checksum: 59506eb4c49eb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00173.sum ../output/part-00173
+Records: 699400
+Checksum: 555ec87f3e568
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00174.sum ../output/part-00174
+Records: 762719
+Checksum: 5d2c3f94caaf5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00175.sum ../output/part-00175
+Records: 653746
+Checksum: 4fda80854d82e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00176.sum ../output/part-00176
+Records: 690645
+Checksum: 5456f9de96d60
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00177.sum ../output/part-00177
+Records: 492268
+Checksum: 3c21e020e1bef
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00178.sum ../output/part-00178
+Records: 632229
+Checksum: 4d2065138c339
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00179.sum ../output/part-00179
+Records: 728566
+Checksum: 58e8cc494bb64
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00180.sum ../output/part-00180
+Records: 667253
+Checksum: 5168572198c58
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00181.sum ../output/part-00181
+Records: 718164
+Checksum: 5792a4ce0028d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00182.sum ../output/part-00182
+Records: 657674
+Checksum: 502dcd0c6bb90
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00183.sum ../output/part-00183
+Records: 735928
+Checksum: 59e09848255fa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00184.sum ../output/part-00184
+Records: 618689
+Checksum: 4b61c3bd8407e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00185.sum ../output/part-00185
+Records: 689034
+Checksum: 543b6a217bc6e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00186.sum ../output/part-00186
+Records: 680579
+Checksum: 530d624a66937
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00187.sum ../output/part-00187
+Records: 639417
+Checksum: 4e13b6135ac21
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00188.sum ../output/part-00188
+Records: 713403
+Checksum: 56fe1bad2d6b0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00189.sum ../output/part-00189
+Records: 737172
+Checksum: 59edbc5f76df1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00190.sum ../output/part-00190
+Records: 763799
+Checksum: 5d56b60939220
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00191.sum ../output/part-00191
+Records: 660064
+Checksum: 509763431ba03
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00192.sum ../output/part-00192
+Records: 684566
+Checksum: 537abd1aa1d6f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00193.sum ../output/part-00193
+Records: 549036
+Checksum: 42fb5d9205944
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00194.sum ../output/part-00194
+Records: 741233
+Checksum: 5a665d46a6584
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00195.sum ../output/part-00195
+Records: 699391
+Checksum: 556705751b1d7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00196.sum ../output/part-00196
+Records: 489077
+Checksum: 3bab8d33ff874
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00197.sum ../output/part-00197
+Records: 589153
+Checksum: 47e04969f20c4
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00198.sum ../output/part-00198
+Records: 748690
+Checksum: 5b7811dc90f0c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00199.sum ../output/part-00199
+Records: 725857
+Checksum: 589cbc2e907fb
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00200.sum ../output/part-00200
+Records: 837664
+Checksum: 6636045e4168f
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00201.sum ../output/part-00201
+Records: 782104
+Checksum: 5f7226e5ff82b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00202.sum ../output/part-00202
+Records: 559042
+Checksum: 44492f8ee96df
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00203.sum ../output/part-00203
+Records: 834354
+Checksum: 65eeaa65cebef
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00204.sum ../output/part-00204
+Records: 559755
+Checksum: 4442d722a17be
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00205.sum ../output/part-00205
+Records: 680410
+Checksum: 5308ce3525153
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00206.sum ../output/part-00206
+Records: 686329
+Checksum: 53c3203abef31
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00207.sum ../output/part-00207
+Records: 677132
+Checksum: 52a42997eceaa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00208.sum ../output/part-00208
+Records: 662272
+Checksum: 50e2ec090e856
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00209.sum ../output/part-00209
+Records: 899405
+Checksum: 6dc668595a506
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00210.sum ../output/part-00210
+Records: 574234
+Checksum: 4633f83c8c9da
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00211.sum ../output/part-00211
+Records: 649742
+Checksum: 4f523011b7c0d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00212.sum ../output/part-00212
+Records: 709424
+Checksum: 56b32e3b612d6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00213.sum ../output/part-00213
+Records: 708043
+Checksum: 566ff215f2e88
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00214.sum ../output/part-00214
+Records: 632298
+Checksum: 4d1b1572a7728
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00215.sum ../output/part-00215
+Records: 734791
+Checksum: 59b159932db5c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00216.sum ../output/part-00216
+Records: 628436
+Checksum: 4cb5413c918f0
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00217.sum ../output/part-00217
+Records: 712229
+Checksum: 56f3fe3f35727
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00218.sum ../output/part-00218
+Records: 633292
+Checksum: 4d4f013c05bab
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00219.sum ../output/part-00219
+Records: 612812
+Checksum: 4abc1196370be
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00220.sum ../output/part-00220
+Records: 769893
+Checksum: 5de83f96d3ad2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00221.sum ../output/part-00221
+Records: 734861
+Checksum: 59b3045368f68
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00222.sum ../output/part-00222
+Records: 668616
+Checksum: 51b06e1d7da68
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00223.sum ../output/part-00223
+Records: 755726
+Checksum: 5c4339fa4cfd2
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00224.sum ../output/part-00224
+Records: 679266
+Checksum: 52faf9f6923a1
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00225.sum ../output/part-00225
+Records: 729838
+Checksum: 590a1876eb8cc
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00226.sum ../output/part-00226
+Records: 711479
+Checksum: 56d894396ce1e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00227.sum ../output/part-00227
+Records: 546593
+Checksum: 42b4e95ab0cc6
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00228.sum ../output/part-00228
+Records: 708426
+Checksum: 56646aa9c23da
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00229.sum ../output/part-00229
+Records: 688498
+Checksum: 53f5f71036c67
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00230.sum ../output/part-00230
+Records: 803326
+Checksum: 621246387e2f7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00231.sum ../output/part-00231
+Records: 694051
+Checksum: 54cfcadf8c489
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00232.sum ../output/part-00232
+Records: 624658
+Checksum: 4c35455feb5b3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00233.sum ../output/part-00233
+Records: 691813
+Checksum: 547d8c2198794
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00234.sum ../output/part-00234
+Records: 666240
+Checksum: 5168d8e1e9e0e
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00235.sum ../output/part-00235
+Records: 563865
+Checksum: 44d871139a422
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00236.sum ../output/part-00236
+Records: 693603
+Checksum: 54b1d62ca2ffa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00237.sum ../output/part-00237
+Records: 608929
+Checksum: 4a71c202ff7be
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00238.sum ../output/part-00238
+Records: 627595
+Checksum: 4ca952becc201
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00239.sum ../output/part-00239
+Records: 810749
+Checksum: 62ea5f0f348a3
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00240.sum ../output/part-00240
+Records: 758982
+Checksum: 5ca332c03e9df
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00241.sum ../output/part-00241
+Records: 617611
+Checksum: 4b682d7843ff8
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00242.sum ../output/part-00242
+Records: 615774
+Checksum: 4b0e15479852b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00243.sum ../output/part-00243
+Records: 553838
+Checksum: 43a79139f3b5b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00244.sum ../output/part-00244
+Records: 659520
+Checksum: 509228900c87c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00245.sum ../output/part-00245
+Records: 798914
+Checksum: 61851128e1c72
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00246.sum ../output/part-00246
+Records: 763144
+Checksum: 5d07b2afcbc83
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00247.sum ../output/part-00247
+Records: 619986
+Checksum: 4bb31ec974013
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00248.sum ../output/part-00248
+Records: 586244
+Checksum: 47889d3d077b5
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00249.sum ../output/part-00249
+Records: 519076
+Checksum: 3f4b037e2517b
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00250.sum ../output/part-00250
+Records: 703668
+Checksum: 55e3fd044ee24
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00251.sum ../output/part-00251
+Records: 684473
+Checksum: 538cff768567a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00252.sum ../output/part-00252
+Records: 866321
+Checksum: 69b4fd137c8ed
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00253.sum ../output/part-00253
+Records: 637964
+Checksum: 4dc890d948001
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00254.sum ../output/part-00254
+Records: 625352
+Checksum: 4c4f41c7ee88a
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00255.sum ../output/part-00255
+Records: 740687
+Checksum: 5a6fba94cc8bd
+Duplicate keys: 0
+SUCCESS - all records are in order
+cat part-00000.sum part-00001.sum part-00002.sum part-00003.sum part-00004.sum part-00005.sum part-00006.sum part-00007.sum part-00008.sum part-00009.sum part-00010.sum part-00011.sum part-00012.sum part-00013.sum part-00014.sum part-00015.sum part-00016.sum part-00017.sum part-00018.sum part-00019.sum part-00020.sum part-00021.sum part-00022.sum part-00023.sum part-00024.sum part-00025.sum part-00026.sum part-00027.sum part-00028.sum part-00029.sum part-00030.sum part-00031.sum part-00032.sum part-00033.sum part-00034.sum part-00035.sum part-00036.sum part-00037.sum part-00038.sum part-00039.sum part-00040.sum part-00041.sum part-00042.sum part-00043.sum part-00044.sum part-00045.sum part-00046.sum part-00047.sum part-00048.sum part-00049.sum part-00050.sum part-00051.sum part-00052.sum part-00053.sum part-00054.sum part-00055.sum part-00056.sum part-00057.sum part-00058.sum part-00059.sum part-00060.sum part-00061.sum part-00062.sum part-00063.sum part-00064.sum part-00065.sum part-00066.sum part-00067.sum part-00068.sum part-00069.sum part-00070.sum part-00071.sum part-00072.sum part-00073.sum part-00074.sum part-00075.sum part-00076.sum part-00077.sum part-00078.sum part-00079.sum part-00080.sum part-00081.sum part-00082.sum part-00083.sum part-00084.sum part-00085.sum part-00086.sum part-00087.sum part-00088.sum part-00089.sum part-00090.sum part-00091.sum part-00092.sum part-00093.sum part-00094.sum part-00095.sum part-00096.sum part-00097.sum part-00098.sum part-00099.sum part-00100.sum part-00101.sum part-00102.sum part-00103.sum part-00104.sum part-00105.sum part-00106.sum part-00107.sum part-00108.sum part-00109.sum part-00110.sum part-00111.sum part-00112.sum part-00113.sum part-00114.sum part-00115.sum part-00116.sum part-00117.sum part-00118.sum part-00119.sum part-00120.sum part-00121.sum part-00122.sum part-00123.sum part-00124.sum part-00125.sum part-00126.sum part-00127.sum part-00128.sum part-00129.sum part-00130.sum part-00131.sum part-00132.sum part-00133.sum part-00134.sum part-00135.sum part-00136.sum part-00137.sum part-00138.sum part-00139.sum part-00140.sum part-00141.sum part-00142.sum part-00143.sum part-00144.sum part-00145.sum part-00146.sum part-00147.sum part-00148.sum part-00149.sum part-00150.sum part-00151.sum part-00152.sum part-00153.sum part-00154.sum part-00155.sum part-00156.sum part-00157.sum part-00158.sum part-00159.sum part-00160.sum part-00161.sum part-00162.sum part-00163.sum part-00164.sum part-00165.sum part-00166.sum part-00167.sum part-00168.sum part-00169.sum part-00170.sum part-00171.sum part-00172.sum part-00173.sum part-00174.sum part-00175.sum part-00176.sum part-00177.sum part-00178.sum part-00179.sum part-00180.sum part-00181.sum part-00182.sum part-00183.sum part-00184.sum part-00185.sum part-00186.sum part-00187.sum part-00188.sum part-00189.sum part-00190.sum part-00191.sum part-00192.sum part-00193.sum part-00194.sum part-00195.sum part-00196.sum part-00197.sum part-00198.sum part-00199.sum part-00200.sum part-00201.sum part-00202.sum part-00203.sum part-00204.sum part-00205.sum part-00206.sum part-00207.sum part-00208.sum part-00209.sum part-00210.sum part-00211.sum part-00212.sum part-00213.sum part-00214.sum part-00215.sum part-00216.sum part-00217.sum part-00218.sum part-00219.sum part-00220.sum part-00221.sum part-00222.sum part-00223.sum part-00224.sum part-00225.sum part-00226.sum part-00227.sum part-00228.sum part-00229.sum part-00230.sum part-00231.sum part-00232.sum part-00233.sum part-00234.sum part-00235.sum part-00236.sum part-00237.sum part-00238.sum part-00239.sum part-00240.sum part-00241.sum part-00242.sum part-00243.sum part-00244.sum part-00245.sum part-00246.sum part-00247.sum part-00248.sum part-00249.sum part-00250.sum part-00251.sum part-00252.sum part-00253.sum part-00254.sum part-00255.sum 
+./valsort -s all.sum
+Records: 171798691
+Checksum: 51ea5e584e0bcd3
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+

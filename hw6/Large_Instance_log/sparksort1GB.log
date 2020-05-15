@@ -1,0 +1,176 @@
+2020-05-01 23:16:26,057 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-05-01 23:16:26,141 INFO client.RMProxy: Connecting to ResourceManager at /192.168.122.158:8032
+2020-05-01 23:16:26,486 INFO yarn.Client: Requesting a new application from cluster with 2 NodeManagers
+2020-05-01 23:16:26,577 INFO conf.Configuration: resource-types.xml not found
+2020-05-01 23:16:26,578 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2020-05-01 23:16:26,595 INFO yarn.Client: Verifying our application has not requested more than the maximum memory capability of the cluster (20480 MB per container)
+2020-05-01 23:16:26,596 INFO yarn.Client: Will allocate AM container, with 18022 MB memory including 1638 MB overhead
+2020-05-01 23:16:26,596 INFO yarn.Client: Setting up container launch context for our AM
+2020-05-01 23:16:26,597 INFO yarn.Client: Setting up the launch environment for our AM container
+2020-05-01 23:16:26,605 INFO yarn.Client: Preparing resources for our AM container
+2020-05-01 23:16:27,004 WARN yarn.Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+2020-05-01 23:16:28,908 INFO yarn.Client: Uploading resource file:/tmp/spark-93dbf90e-715e-4ccf-a3b5-d5e5699983bb/__spark_libs__5124997443292800153.zip -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588361578124_0020/__spark_libs__5124997443292800153.zip
+2020-05-01 23:16:30,463 INFO yarn.Client: Uploading resource file:/exports/projects/spark-3.0.0-preview2-bin-hadoop3.2/SparkSort.jar -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588361578124_0020/SparkSort.jar
+2020-05-01 23:16:30,722 INFO yarn.Client: Uploading resource file:/tmp/spark-93dbf90e-715e-4ccf-a3b5-d5e5699983bb/__spark_conf__2361189198303357490.zip -> /exports/projects/sparkstaging/ubuntu/.sparkStaging/application_1588361578124_0020/__spark_conf__.zip
+2020-05-01 23:16:30,796 INFO spark.SecurityManager: Changing view acls to: ubuntu
+2020-05-01 23:16:30,796 INFO spark.SecurityManager: Changing modify acls to: ubuntu
+2020-05-01 23:16:30,797 INFO spark.SecurityManager: Changing view acls groups to: 
+2020-05-01 23:16:30,797 INFO spark.SecurityManager: Changing modify acls groups to: 
+2020-05-01 23:16:30,797 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ubuntu); groups with view permissions: Set(); users  with modify permissions: Set(ubuntu); groups with modify permissions: Set()
+2020-05-01 23:16:30,855 INFO yarn.Client: Submitting application application_1588361578124_0020 to ResourceManager
+2020-05-01 23:16:30,902 INFO impl.YarnClientImpl: Submitted application application_1588361578124_0020
+2020-05-01 23:16:31,908 INFO yarn.Client: Application report for application_1588361578124_0020 (state: ACCEPTED)
+2020-05-01 23:16:31,915 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1588374990870
+	 final status: UNDEFINED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588361578124_0020/
+	 user: ubuntu
+2020-05-01 23:16:32,919 INFO yarn.Client: Application report for application_1588361578124_0020 (state: ACCEPTED)
+2020-05-01 23:16:33,923 INFO yarn.Client: Application report for application_1588361578124_0020 (state: ACCEPTED)
+2020-05-01 23:16:34,925 INFO yarn.Client: Application report for application_1588361578124_0020 (state: ACCEPTED)
+2020-05-01 23:16:35,929 INFO yarn.Client: Application report for application_1588361578124_0020 (state: ACCEPTED)
+2020-05-01 23:16:36,932 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:36,933 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: demo-namenode.local
+	 ApplicationMaster RPC port: 40289
+	 queue: default
+	 start time: 1588374990870
+	 final status: UNDEFINED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588361578124_0020/
+	 user: ubuntu
+2020-05-01 23:16:37,937 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:38,940 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:39,943 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:40,951 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:41,954 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:42,957 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:43,959 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:44,961 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:45,970 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:46,972 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:47,974 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:48,977 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:49,979 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:50,982 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:51,984 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:52,987 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:53,989 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:54,992 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:55,995 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:56,997 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:58,000 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:16:59,003 INFO yarn.Client: Application report for application_1588361578124_0020 (state: RUNNING)
+2020-05-01 23:17:00,006 INFO yarn.Client: Application report for application_1588361578124_0020 (state: FINISHED)
+2020-05-01 23:17:00,007 INFO yarn.Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: demo-namenode.local
+	 ApplicationMaster RPC port: 40289
+	 queue: default
+	 start time: 1588374990870
+	 final status: SUCCEEDED
+	 tracking URL: http://demo-namenode.local:8088/proxy/application_1588361578124_0020/
+	 user: ubuntu
+2020-05-01 23:17:00,030 INFO util.ShutdownHookManager: Shutdown hook called
+2020-05-01 23:17:00,033 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-93dbf90e-715e-4ccf-a3b5-d5e5699983bb
+2020-05-01 23:17:00,040 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-9d556dba-fe1c-4720-9127-274647a31cf3
+
+real	0m35.872s
+user	0m12.804s
+sys	0m2.390s
+
+Valsort
+./valsort -o part-00000.sum ../output/part-00000
+Records: 677364
+Checksum: 52b157acfbc9c
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00001.sum ../output/part-00001
+Records: 710467
+Checksum: 56b34d484c73d
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00002.sum ../output/part-00002
+Records: 715614
+Checksum: 57468d2845832
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00003.sum ../output/part-00003
+Records: 678794
+Checksum: 52cc90bd95b67
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00004.sum ../output/part-00004
+Records: 618730
+Checksum: 4b72012e2f406
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00005.sum ../output/part-00005
+Records: 688362
+Checksum: 53fbe73b0a278
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00006.sum ../output/part-00006
+Records: 736862
+Checksum: 59f480a8807a7
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00007.sum ../output/part-00007
+Records: 540452
+Checksum: 41fed0d4a7e87
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00008.sum ../output/part-00008
+Records: 675605
+Checksum: 5292fcdc25dce
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00009.sum ../output/part-00009
+Records: 720097
+Checksum: 58018e62c4089
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00010.sum ../output/part-00010
+Records: 574116
+Checksum: 45f34426aee15
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00011.sum ../output/part-00011
+Records: 589634
+Checksum: 47f380f3f5b54
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00012.sum ../output/part-00012
+Records: 617760
+Checksum: 4b6542945a232
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00013.sum ../output/part-00013
+Records: 663954
+Checksum: 510e34d33b5df
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00014.sum ../output/part-00014
+Records: 754291
+Checksum: 5c100030b78fa
+Duplicate keys: 0
+SUCCESS - all records are in order
+./valsort -o part-00015.sum ../output/part-00015
+Records: 775316
+Checksum: 5eb1363c86e4b
+Duplicate keys: 0
+SUCCESS - all records are in order
+cat part-00000.sum part-00001.sum part-00002.sum part-00003.sum part-00004.sum part-00005.sum part-00006.sum part-00007.sum part-00008.sum part-00009.sum part-00010.sum part-00011.sum part-00012.sum part-00013.sum part-00014.sum part-00015.sum 
+./valsort -s all.sum
+Records: 10737418
+Checksum: 51e88faefe7b34
+Duplicate keys: 0
+SUCCESS - all records are in order
+
